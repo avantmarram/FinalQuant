@@ -1,5 +1,5 @@
 import requests, time
-PV="https://api.patentsview.org/patents/query?q={q}&f=['patent_number','patent_date','patent_title']&o={'per_page':10,'page':1,'order':'-patent_date'}"
+PV="https://api.patentsview.org/patents/query?q={q}&f=[%22patent_number%22,%22patent_date%22,%22patent_title%22]&o={%22per_page%22:10,%22page%22:1,%22order%22:-patent_date}"
 def fetch_patents(keywords):
     out=[]
     for kw in keywords:
