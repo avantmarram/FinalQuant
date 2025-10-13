@@ -1,1 +1,7 @@
-{}
+{
+  "notified_ids": [
+    "{\"change_pct\": 23.73, \"score\": 8, \"ticker\": \"RGTI\", \"type\": \"PRICE_SPIKE\"}",
+    "{\"change_pct\": 21.62, \"score\": 8, \"ticker\": \"QBTS\", \"type\": \"PRICE_SPIKE\"}",
+    "{\"filed\": \"2022-12-19\", \"form\": \"8-K\", \"score\": 7, \"ticker\": \"RGTI\", \"type\": \"SEC_FILING\"}"
+  ]
+}

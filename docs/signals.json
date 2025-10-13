@@ -1,0 +1,1400 @@
+[
+  {
+    "type": "PRICE_SPIKE",
+    "ticker": "RGTI",
+    "change_pct": 23.73,
+    "score": 8
+  },
+  {
+    "type": "PRICE_SPIKE",
+    "ticker": "QBTS",
+    "change_pct": 21.62,
+    "score": 8
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "RGTI",
+    "form": "8-K",
+    "filed": "2022-12-19",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "RGTI",
+    "form": "8-K",
+    "filed": "2022-12-16",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "RGTI",
+    "form": "8-K",
+    "filed": "2022-12-09",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "RGTI",
+    "form": "10-Q",
+    "filed": "2022-11-14",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "RGTI",
+    "form": "10-Q",
+    "filed": "2022-08-15",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "RGTI",
+    "form": "10-Q",
+    "filed": "2022-05-16",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "RGTI",
+    "form": "10-K",
+    "filed": "2022-04-13",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "RGTI",
+    "form": "8-K",
+    "filed": "2021-11-22",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "RGTI",
+    "form": "10-Q",
+    "filed": "2021-11-22",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "RGTI",
+    "form": "10-Q",
+    "filed": "2021-08-13",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "RGTI",
+    "form": "10-Q",
+    "filed": "2021-05-24",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "RGTI",
+    "form": "8-K",
+    "filed": "2021-05-24",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "RGTI",
+    "form": "8-K",
+    "filed": "2021-04-07",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "RGTI",
+    "form": "8-K",
+    "filed": "2021-03-01",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "RGTI",
+    "form": "8-K",
+    "filed": "2021-02-24",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "RGTI",
+    "form": "S-1",
+    "filed": "2021-02-03",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "IONQ",
+    "form": "8-K",
+    "filed": "2025-10-07",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "IONQ",
+    "form": "8-K",
+    "filed": "2025-09-29",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "IONQ",
+    "form": "8-K",
+    "filed": "2025-09-17",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "IONQ",
+    "form": "8-K",
+    "filed": "2025-09-04",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "IONQ",
+    "form": "8-K",
+    "filed": "2025-08-28",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "IONQ",
+    "form": "8-K",
+    "filed": "2025-08-28",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "IONQ",
+    "form": "8-K",
+    "filed": "2025-08-15",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "IONQ",
+    "form": "8-K",
+    "filed": "2025-08-11",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "IONQ",
+    "form": "8-K",
+    "filed": "2025-08-06",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "IONQ",
+    "form": "10-Q",
+    "filed": "2025-08-06",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "IONQ",
+    "form": "8-K",
+    "filed": "2025-08-06",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "IONQ",
+    "form": "8-K",
+    "filed": "2025-07-15",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "IONQ",
+    "form": "8-K",
+    "filed": "2025-07-09",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "IONQ",
+    "form": "8-K",
+    "filed": "2025-06-20",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "IONQ",
+    "form": "8-K",
+    "filed": "2025-06-09",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "IONQ",
+    "form": "8-K",
+    "filed": "2025-06-09",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "IONQ",
+    "form": "8-K",
+    "filed": "2025-06-02",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "IONQ",
+    "form": "10-Q",
+    "filed": "2025-05-07",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "IONQ",
+    "form": "8-K",
+    "filed": "2025-05-07",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "IONQ",
+    "form": "8-K",
+    "filed": "2025-05-06",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "IONQ",
+    "form": "8-K",
+    "filed": "2025-04-22",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "IONQ",
+    "form": "8-K",
+    "filed": "2025-03-11",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "IONQ",
+    "form": "8-K",
+    "filed": "2025-02-27",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "IONQ",
+    "form": "10-K",
+    "filed": "2025-02-26",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "IONQ",
+    "form": "8-K",
+    "filed": "2025-02-26",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "IONQ",
+    "form": "8-K",
+    "filed": "2024-12-20",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "IONQ",
+    "form": "8-K",
+    "filed": "2024-12-06",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "IONQ",
+    "form": "10-Q",
+    "filed": "2024-11-06",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "IONQ",
+    "form": "8-K",
+    "filed": "2024-11-06",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "IONQ",
+    "form": "10-Q",
+    "filed": "2024-08-07",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "IONQ",
+    "form": "8-K",
+    "filed": "2024-08-07",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "IONQ",
+    "form": "8-K",
+    "filed": "2024-06-07",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "IONQ",
+    "form": "10-Q",
+    "filed": "2024-05-10",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "IONQ",
+    "form": "8-K",
+    "filed": "2024-05-08",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "IONQ",
+    "form": "10-K",
+    "filed": "2024-02-28",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "IONQ",
+    "form": "8-K",
+    "filed": "2024-02-28",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "IONQ",
+    "form": "10-Q",
+    "filed": "2023-11-09",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "IONQ",
+    "form": "8-K",
+    "filed": "2023-11-08",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "IONQ",
+    "form": "8-K",
+    "filed": "2023-10-05",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "IONQ",
+    "form": "8-K",
+    "filed": "2023-08-17",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "IONQ",
+    "form": "10-Q",
+    "filed": "2023-08-10",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "IONQ",
+    "form": "8-K",
+    "filed": "2023-08-10",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "IONQ",
+    "form": "8-K",
+    "filed": "2023-06-30",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "IONQ",
+    "form": "10-Q",
+    "filed": "2023-05-11",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "IONQ",
+    "form": "8-K",
+    "filed": "2023-05-11",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "IONQ",
+    "form": "10-K",
+    "filed": "2023-03-30",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "IONQ",
+    "form": "8-K",
+    "filed": "2023-03-30",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "IONQ",
+    "form": "8-K",
+    "filed": "2023-03-17",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "IONQ",
+    "form": "8-K",
+    "filed": "2023-03-06",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "IONQ",
+    "form": "8-K",
+    "filed": "2023-03-03",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "IONQ",
+    "form": "8-K",
+    "filed": "2022-12-09",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "IONQ",
+    "form": "10-Q",
+    "filed": "2022-11-14",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "IONQ",
+    "form": "8-K",
+    "filed": "2022-11-14",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "IONQ",
+    "form": "10-Q",
+    "filed": "2022-08-15",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "IONQ",
+    "form": "8-K",
+    "filed": "2022-08-15",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "IONQ",
+    "form": "8-K",
+    "filed": "2022-07-21",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "IONQ",
+    "form": "8-K",
+    "filed": "2022-05-26",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "IONQ",
+    "form": "10-Q",
+    "filed": "2022-05-16",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "IONQ",
+    "form": "8-K",
+    "filed": "2022-05-16",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "IONQ",
+    "form": "10-K",
+    "filed": "2022-03-28",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "IONQ",
+    "form": "8-K",
+    "filed": "2022-03-28",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "IONQ",
+    "form": "8-K",
+    "filed": "2021-12-17",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "IONQ",
+    "form": "10-Q",
+    "filed": "2021-11-15",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "IONQ",
+    "form": "8-K",
+    "filed": "2021-11-15",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "IONQ",
+    "form": "S-1",
+    "filed": "2021-10-04",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "IONQ",
+    "form": "8-K",
+    "filed": "2021-10-04",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "IONQ",
+    "form": "8-K",
+    "filed": "2021-10-04",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "IONQ",
+    "form": "10-Q",
+    "filed": "2021-08-16",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "IONQ",
+    "form": "10-Q",
+    "filed": "2021-06-04",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "IONQ",
+    "form": "8-K",
+    "filed": "2021-06-01",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "IONQ",
+    "form": "8-K",
+    "filed": "2021-05-18",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "IONQ",
+    "form": "10-K",
+    "filed": "2021-03-25",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "IONQ",
+    "form": "8-K",
+    "filed": "2021-03-08",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "IONQ",
+    "form": "8-K",
+    "filed": "2021-01-19",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "IONQ",
+    "form": "8-K",
+    "filed": "2020-12-31",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "IONQ",
+    "form": "10-Q",
+    "filed": "2020-12-18",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "IONQ",
+    "form": "8-K",
+    "filed": "2020-11-23",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "IONQ",
+    "form": "8-K",
+    "filed": "2020-11-17",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "IONQ",
+    "form": "S-1",
+    "filed": "2020-10-16",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "QUBT",
+    "form": "8-K",
+    "filed": "2025-10-01",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "QUBT",
+    "form": "8-K",
+    "filed": "2025-09-18",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "QUBT",
+    "form": "8-K",
+    "filed": "2025-08-07",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "QUBT",
+    "form": "10-Q",
+    "filed": "2025-08-07",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "QUBT",
+    "form": "8-K",
+    "filed": "2025-08-06",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "QUBT",
+    "form": "8-K",
+    "filed": "2025-08-06",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "QUBT",
+    "form": "8-K",
+    "filed": "2025-08-06",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "QUBT",
+    "form": "8-K",
+    "filed": "2025-07-16",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "QUBT",
+    "form": "8-K",
+    "filed": "2025-07-01",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "QUBT",
+    "form": "8-K",
+    "filed": "2025-06-30",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "QUBT",
+    "form": "8-K",
+    "filed": "2025-06-23",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "QUBT",
+    "form": "8-K",
+    "filed": "2025-06-18",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "QUBT",
+    "form": "8-K",
+    "filed": "2025-06-13",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "QUBT",
+    "form": "8-K",
+    "filed": "2025-06-02",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "QUBT",
+    "form": "8-K",
+    "filed": "2025-05-27",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "QUBT",
+    "form": "10-Q",
+    "filed": "2025-05-08",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "QUBT",
+    "form": "8-K",
+    "filed": "2025-05-08",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "QUBT",
+    "form": "8-K",
+    "filed": "2025-05-07",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "QUBT",
+    "form": "8-K",
+    "filed": "2025-05-07",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "QUBT",
+    "form": "8-K",
+    "filed": "2025-04-16",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "QUBT",
+    "form": "8-K",
+    "filed": "2025-04-04",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "QUBT",
+    "form": "8-K",
+    "filed": "2025-04-01",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "QUBT",
+    "form": "8-K",
+    "filed": "2025-03-28",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "QUBT",
+    "form": "8-K",
+    "filed": "2025-03-20",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "QUBT",
+    "form": "8-K",
+    "filed": "2025-03-13",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "QUBT",
+    "form": "8-K",
+    "filed": "2025-03-12",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "QUBT",
+    "form": "8-K",
+    "filed": "2025-03-03",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "QUBT",
+    "form": "10-K",
+    "filed": "2025-02-27",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "QUBT",
+    "form": "8-K",
+    "filed": "2025-02-27",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "QUBT",
+    "form": "8-K",
+    "filed": "2025-02-27",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "QUBT",
+    "form": "8-K",
+    "filed": "2025-02-26",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "QUBT",
+    "form": "8-K",
+    "filed": "2025-02-07",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "QUBT",
+    "form": "8-K",
+    "filed": "2025-01-24",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "QUBT",
+    "form": "8-K",
+    "filed": "2025-01-08",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "QUBT",
+    "form": "8-K",
+    "filed": "2025-01-02",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "QUBT",
+    "form": "8-K",
+    "filed": "2024-12-19",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "QUBT",
+    "form": "8-K",
+    "filed": "2024-12-12",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "QUBT",
+    "form": "8-K",
+    "filed": "2024-11-22",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "QUBT",
+    "form": "8-K",
+    "filed": "2024-11-07",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "QUBT",
+    "form": "10-Q",
+    "filed": "2024-11-06",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "QUBT",
+    "form": "8-K",
+    "filed": "2024-11-06",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "QUBT",
+    "form": "8-K",
+    "filed": "2024-11-06",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "QUBT",
+    "form": "8-K",
+    "filed": "2024-10-15",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "QUBT",
+    "form": "8-K",
+    "filed": "2024-10-09",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "QUBT",
+    "form": "8-K",
+    "filed": "2024-10-01",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "QUBT",
+    "form": "8-K",
+    "filed": "2024-09-19",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "QUBT",
+    "form": "8-K",
+    "filed": "2024-09-04",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "QUBT",
+    "form": "8-K",
+    "filed": "2024-08-07",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "QUBT",
+    "form": "10-Q",
+    "filed": "2024-08-07",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "QUBT",
+    "form": "8-K",
+    "filed": "2024-08-06",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "QUBT",
+    "form": "8-K",
+    "filed": "2024-08-06",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "QUBT",
+    "form": "8-K",
+    "filed": "2024-07-15",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "QUBT",
+    "form": "8-K",
+    "filed": "2024-07-09",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "QUBT",
+    "form": "8-K",
+    "filed": "2024-07-01",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "QUBT",
+    "form": "8-K",
+    "filed": "2024-06-27",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "QUBT",
+    "form": "8-K",
+    "filed": "2024-06-20",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "QUBT",
+    "form": "8-K",
+    "filed": "2024-06-03",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "QUBT",
+    "form": "8-K",
+    "filed": "2024-05-29",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "QUBT",
+    "form": "8-K",
+    "filed": "2024-05-08",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "QUBT",
+    "form": "10-Q",
+    "filed": "2024-05-08",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "QUBT",
+    "form": "8-K",
+    "filed": "2024-05-07",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "QUBT",
+    "form": "8-K",
+    "filed": "2024-05-07",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "QUBT",
+    "form": "8-K",
+    "filed": "2024-04-23",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "QUBT",
+    "form": "8-K",
+    "filed": "2024-04-17",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "QUBT",
+    "form": "8-K",
+    "filed": "2024-04-12",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "QUBT",
+    "form": "8-K",
+    "filed": "2024-04-10",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "QUBT",
+    "form": "8-K",
+    "filed": "2024-04-08",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "QUBT",
+    "form": "8-K",
+    "filed": "2024-04-01",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "QUBT",
+    "form": "8-K",
+    "filed": "2024-03-21",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "QUBT",
+    "form": "8-K",
+    "filed": "2024-03-20",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "QUBT",
+    "form": "8-K",
+    "filed": "2024-03-11",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "QUBT",
+    "form": "8-K",
+    "filed": "2024-03-04",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "QUBT",
+    "form": "8-K",
+    "filed": "2024-02-28",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "QUBT",
+    "form": "8-K",
+    "filed": "2024-02-28",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "QUBT",
+    "form": "10-K",
+    "filed": "2024-02-27",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "QUBT",
+    "form": "8-K",
+    "filed": "2024-02-27",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "QUBT",
+    "form": "8-K",
+    "filed": "2024-02-27",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "QUBT",
+    "form": "8-K",
+    "filed": "2024-02-08",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "QUBT",
+    "form": "8-K",
+    "filed": "2024-01-02",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "QUBT",
+    "form": "8-K",
+    "filed": "2023-12-29",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "QUBT",
+    "form": "8-K",
+    "filed": "2023-12-22",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "QUBT",
+    "form": "8-K",
+    "filed": "2023-12-21",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "QUBT",
+    "form": "8-K",
+    "filed": "2023-12-04",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "QUBT",
+    "form": "8-K",
+    "filed": "2023-12-04",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "QUBT",
+    "form": "8-K",
+    "filed": "2023-11-13",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "QUBT",
+    "form": "8-K",
+    "filed": "2023-11-08",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "QUBT",
+    "form": "10-Q",
+    "filed": "2023-11-07",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "QUBT",
+    "form": "8-K",
+    "filed": "2023-11-07",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "QUBT",
+    "form": "8-K",
+    "filed": "2023-11-07",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "QUBT",
+    "form": "8-K",
+    "filed": "2023-10-20",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "QUBT",
+    "form": "8-K",
+    "filed": "2023-10-12",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "QUBT",
+    "form": "8-K",
+    "filed": "2023-10-02",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "QUBT",
+    "form": "8-K",
+    "filed": "2023-09-25",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "QUBT",
+    "form": "8-K",
+    "filed": "2023-09-18",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "QUBT",
+    "form": "8-K",
+    "filed": "2023-09-15",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "QUBT",
+    "form": "8-K",
+    "filed": "2023-09-12",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "QUBT",
+    "form": "8-K",
+    "filed": "2023-09-08",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "QUBT",
+    "form": "8-K",
+    "filed": "2023-09-07",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "QUBT",
+    "form": "8-K",
+    "filed": "2023-08-09",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "QUBT",
+    "form": "10-Q",
+    "filed": "2023-08-03",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "QUBT",
+    "form": "8-K",
+    "filed": "2023-08-03",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "QUBT",
+    "form": "8-K",
+    "filed": "2023-08-03",
+    "score": 7
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "QUBT",
+    "form": "8-K",
+    "filed": "2023-08-03",
+    "score": 7
+  }
+]
