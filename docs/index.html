@@ -1,0 +1,20 @@
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Quantum Radar</title>
+<style>body{font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;margin:20px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;margin-top:20px}.card{border:1px solid #ddd;border-radius:12px;padding:16px;box-shadow:0 1px 4px rgba(0,0,0,.05)}.muted{color:#666}.score{font-weight:700}.badge{display:inline-block;padding:2px 8px;border-radius:12px;background:#eee;font-size:12px}</style></head>
+<body><h1>Quantum Radar</h1><div class="muted">Gratis V1 • Oppdateres automatisk</div><section id="overview" class="grid"></section><h2>Toppsignaler</h2><div id="signals" class="grid"></div>
+<script>
+async function j(p){const r=await fetch(p);return r.json();}
+function el(t,c,x){const e=document.createElement(t);if(c)e.className=c;if(x)e.textContent=x;return e;}
+(async ()=>{
+  const data=await j('data.json'); const sigs=await j('signals.json');
+  const ov=document.getElementById('overview');
+  const a=el('div','card'); a.appendChild(el('div','muted','Sist oppdatert: '+data.generated_at));
+  a.appendChild(el('div','', 'Tickers: '+data.tickers.join(', ')));
+  a.appendChild(el('div','', `Antall → arXiv: ${data.counts.arxiv}, SEC: ${data.counts.sec}, Patenter: ${data.counts.patents}, Nyheter: ${data.counts.news}, Signaler: ${data.counts.signals}`));
+  const p=el('div','card'); p.appendChild(el('div','','Priser (EOD):'));
+  (data.prices||[]).forEach(r=>p.appendChild(el('div','', `${r.ticker}: ${r.price} (${r.change_pct}%)`)));
+  ov.appendChild(a); ov.appendChild(p);
+  const s=document.getElementById('signals');
+  (sigs||[]).slice(0,20).forEach(x=>{const c=el('div','card'); c.appendChild(el('div','badge',x.type)); c.appendChild(el('div','score','Score: '+x.score));
+    Object.entries(x).forEach(([k,v])=>{if(k==='type'||k==='score')return; c.appendChild(el('div','', k+': '+v));}); s.appendChild(c);});
+})();
+</script></body></html>
