@@ -5,42 +5,68 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Quantum Radar</title>
   <style>
-    :root{ --bg:#fff;--text:#111;--muted:#666;--card:#fff;--border:#e5e7eb;--shadow:0 1px 6px rgba(0,0,0,.06)}
+    :root{
+      --bg:#fff;--text:#111;--muted:#666;--card:#fff;--border:#e5e7eb;
+      --shadow:0 1px 6px rgba(0,0,0,.06)
+    }
     *{box-sizing:border-box}
     body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Inter,sans-serif;margin:20px;color:var(--text);background:var(--bg)}
-    h1{margin:0 0 8px 0} h2{margin:28px 0 10px 0}
-    .muted{color:var(--muted)} .row{display:flex;gap:12px;flex-wrap:wrap;margin-top:12px}
+    h1{margin:0 0 8px 0}
+    h2{margin:28px 0 10px 0}
+    .muted{color:var(--muted)}
+    .row{display:flex;gap:12px;flex-wrap:wrap;margin-top:12px}
     .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px;margin-top:10px}
     .card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:14px;box-shadow:var(--shadow)}
     .badge{display:inline-block;padding:2px 8px;border-radius:12px;background:#eef2ff;font-size:12px;margin-bottom:6px}
-    .score{font-weight:700;margin-bottom:6px} .pill{border:1px solid var(--border);border-radius:999px;padding:6px 10px}
+    .score{font-weight:700;margin-bottom:6px}
+    .pill{border:1px solid var(--border);border-radius:999px;padding:6px 10px}
     .controls{display:flex;gap:10px;flex-wrap:wrap}
     input[type="search"],select{padding:8px 10px;border:1px solid var(--border);border-radius:10px}
-    a{color:inherit} .kvs{display:grid;grid-template-columns:120px 1fr;gap:4px} .kvs div:nth-child(odd){color:var(--muted)}
+    a{color:inherit}
+    .kvs{display:grid;grid-template-columns:120px 1fr;gap:4px}
+    .kvs div:nth-child(odd){color:var(--muted)}
+    /* Tabell */
+    table{width:100%;border-collapse:collapse;margin-top:10px;border:1px solid var(--border);border-radius:12px;overflow:hidden}
+    thead{background:#f8fafc}
+    th,td{padding:10px;border-bottom:1px solid var(--border);text-align:left;font-size:14px}
+    tr:hover{background:#fafafa}
+    .chip{display:inline-block;padding:2px 8px;border-radius:999px;font-size:12px;border:1px solid var(--border)}
   </style>
 </head>
 <body>
   <h1>Quantum Radar</h1>
   <div class="muted">Autonom overvåkning av kvanteaksjer • Oppdateres automatisk av GitHub Actions</div>
 
+  <!-- OVERSIKT -->
   <section id="overview" class="row"></section>
 
+  <!-- KONTROLLER -->
   <div class="controls" style="margin-top:12px">
     <input id="q" type="search" placeholder="Søk (ticker, tittel, type, form)…" />
     <select id="type">
       <option value="">Alle typer</option>
-      <option>PRICE_SPIKE</option><option>PRICE_DIP</option><option>SEC_FILING</option>
-      <option>PATENT</option><option>NEWS</option><option>ARXIV</option>
+      <option>PRICE_SPIKE</option>
+      <option>PRICE_DIP</option>
+      <option>SEC_FILING</option>
+      <option>PATENT</option>
+      <option>NEWS</option>
+      <option>ARXIV</option>
     </select>
     <select id="minScore">
-      <option value="0">Min score: 0</option><option value="5">Min score: 5</option>
-      <option value="6">Min score: 6</option><option value="7" selected>Min score: 7</option><option value="8">Min score: 8</option>
+      <option value="0">Min score: 0</option>
+      <option value="5">Min score: 5</option>
+      <option value="6">Min score: 6</option>
+      <option value="7" selected>Min score: 7</option>
+      <option value="8">Min score: 8</option>
     </select>
   </div>
 
+  <!-- TREND RADAR -->
   <h2>Trend Radar</h2>
-  <div id="trend" class="grid"></div>
+  <div id="trendCards" class="grid"></div>
+  <div id="trendTableWrap" class="card"></div>
 
+  <!-- SIGNALER -->
   <h2>Nytt i dag</h2>
   <div id="today" class="grid"></div>
 
@@ -51,88 +77,206 @@
   <div id="history" class="grid"></div>
 
   <script>
-  async function getJSON(p){ const r = await fetch(p, {cache:'no-store'}); return r.json(); }
-  function el(t,c,x){ const e=document.createElement(t); if(c)e.className=c; if(x!==undefined)e.textContent=x; return e; }
+    // ---------- Utils ----------
+    async function getJSON(p){ const r = await fetch(p, {cache:'no-store'}); return r.json(); }
+    function el(t,c,x){ const e=document.createElement(t); if(c) e.className=c; if(x!==undefined) e.textContent=x; return e; }
+    const nf2 = new Intl.NumberFormat('no-NO',{minimumFractionDigits:2,maximumFractionDigits:2});
+    const nfi = new Intl.NumberFormat('no-NO');
 
-  function infoCard(data){
-    const a = el('div','card');
-    a.appendChild(el('div','muted','Sist oppdatert: '+data.generated_at));
-    a.appendChild(el('div','','Tickers: '+(data.tickers||[]).join(', ')));
-    a.appendChild(el('div','', `Antall → i dag: ${data.counts?.signals_today ?? 0}, uke: ${data.counts?.signals_week ?? 0}, totalt: ${data.counts?.signals ?? 0}`));
-    if (data.backtest){
-      a.appendChild(el('div','', `Backtest (5d, score≥7): trades ${data.backtest.trades}, winrate ${data.backtest.winrate}%, avg ${data.backtest.avg_ret}%`));
+    function fmt2(v){
+      if (v===null || v===undefined || Number.isNaN(+v)) return '–';
+      return nf2.format(+v);
     }
-    return a;
-  }
-  function pricesCard(data){
-    const p = el('div','card'); p.appendChild(el('div','','Priser:'));
-    (data.prices||[]).forEach(r=>p.appendChild(el('div','pill', `${r.ticker}: ${r.price} (${r.change_pct}%)`)));
-    return p;
-  }
+    function pct2(v){
+      if (v===null || v===undefined || Number.isNaN(+v)) return '–';
+      const s = (+v)>=0 ? '+' : '';
+      return s + nf2.format(+v) + '%';
+    }
 
-  function card(s){
-    const c = el('div','card'); c.appendChild(el('div','badge', s.type||'')); c.appendChild(el('div','score','Score: '+(s.score||0)));
-    const kv = el('div','kvs'); const skip=new Set(['type','score']);
-    for (const [k,v] of Object.entries(s)){ if(skip.has(k))continue; kv.appendChild(el('div','',k+':')); 
-      if(k==='url'||k==='link'){ const a=document.createElement('a'); a.href=v; a.textContent=v; a.target='_blank'; const w=el('div'); w.appendChild(a); kv.appendChild(w);}
-      else { kv.appendChild(el('div','', String(v)));}}
-    c.appendChild(kv); return c;
-  }
-
-  function trendCard(t){
-    const c = el('div','card'); const b = el('div','badge', `TREND • ${t.status}`);
-    if (t.status==='DOWN')  b.style.background='#fee2e2';
-    if (t.status==='UP')    b.style.background='#d1fae5';
-    if (t.status==='WATCH') b.style.background='#fff3c4';
-    c.appendChild(b);
-    c.appendChild(el('div','score', `${t.ticker} • score ${t.score}`));
-    const kv = el('div','kvs');
-    const rows = {'RSI':t.rsi?.toFixed?.(1),'EMA5':t.ema5?.toFixed?.(2),'EMA20':t.ema20?.toFixed?.(2),'Close':t.close?.toFixed?.(2),
-                  'Change%':(t.change_pct?.toFixed?.(2)||'0')+'%','Vol':Math.round(t.vol||0),'Vol avg20':Math.round(t.vol_avg20||0),
-                  'Notater':(t.notes||[]).join('; ')};
-    Object.entries(rows).forEach(([k,v])=>{kv.appendChild(el('div','',k+':')); kv.appendChild(el('div','',String(v)));});
-    c.appendChild(kv); return c;
-  }
-
-  function matchesFilter(s, txt, type, minScore){
-    if (minScore && (s.score||0) < minScore) return false;
-    if (type && (s.type||'') !== type) return false;
-    if (!txt) return true;
-    return JSON.stringify(s).toLowerCase().includes(txt.toLowerCase());
-  }
-
-  (async ()=>{
-    const data = await getJSON('data.json');
-    const sigs = await getJSON('signals.json');
-
-    // overview
-    const ov=document.getElementById('overview'); ov.appendChild(infoCard(data)); ov.appendChild(pricesCard(data));
-
-    // trend
-    const $trend = document.getElementById('trend');
-    (data.trend||[]).forEach(t => $trend.appendChild(trendCard(t)));
-
-    // sections
-    const $today=document.getElementById('today'), $week=document.getElementById('week'), $hist=document.getElementById('history');
-    const todayIso=(new Date()).toISOString().slice(0,10); const weekCut=new Date(Date.now()-7*86400000).toISOString();
-
-    function render(){
-      const txt=document.getElementById('q').value.trim();
-      const typ=document.getElementById('type').value;
-      const minS=parseInt(document.getElementById('minScore').value||'0',10);
-      [$today,$week,$hist].forEach(n=>n.innerHTML='');
-      (sigs||[]).forEach(s=>{
-        if(!matchesFilter(s,txt,typ,minS)) return;
-        const ts=(s.ts||''); const cardEl=card(s);
-        if(ts>=weekCut){ if(ts.startsWith(todayIso)) $today.appendChild(cardEl); else $week.appendChild(cardEl); }
-        else { $hist.appendChild(cardEl); }
+    // ---------- Oversikt ----------
+    function infoCard(data){
+      const a = el('div','card');
+      a.appendChild(el('div','muted','Sist oppdatert: '+data.generated_at));
+      a.appendChild(el('div','','Tickers: '+(data.tickers||[]).join(', ')));
+      a.appendChild(el('div','', `Antall → i dag: ${data.counts?.signals_today ?? 0}, uke: ${data.counts?.signals_week ?? 0}, totalt: ${data.counts?.signals ?? 0}`));
+      if (data.backtest){
+        a.appendChild(el('div','', `Backtest (5d, score≥7): trades ${data.backtest.trades}, winrate ${fmt2(data.backtest.winrate)}%, avg ${fmt2(data.backtest.avg_ret)}%`));
+      }
+      return a;
+    }
+    function pricesCard(data){
+      const p = el('div','card'); p.appendChild(el('div','','Priser:'));
+      (data.prices||[]).forEach(r=>{
+        p.appendChild(el('div','pill', `${r.ticker}: ${fmt2(r.price)} (${pct2(r.change_pct)})`));
       });
+      return p;
     }
-    render();
-    document.getElementById('q').addEventListener('input', render);
-    document.getElementById('type').addEventListener('change', render);
-    document.getElementById('minScore').addEventListener('change', render);
-  })();
+
+    // ---------- Trend Radar (kort + tabell) ----------
+    function statusBadge(status){
+      const b = el('span','chip',status);
+      if (status==='UP') b.style.background='#d1fae5';
+      if (status==='WATCH') b.style.background='#fff3c4';
+      if (status==='DOWN') b.style.background='#fee2e2';
+      return b;
+    }
+    function trendCard(t){
+      const c = el('div','card');
+      const head = el('div','badge','TREND');
+      if (t.status==='UP') head.style.background='#d1fae5';
+      if (t.status==='WATCH') head.style.background='#fff3c4';
+      if (t.status==='DOWN') head.style.background='#fee2e2';
+      c.appendChild(head);
+      c.appendChild(el('div','score', `${t.ticker} • score ${t.score}`));
+      const kv = el('div','kvs');
+      const rows = {
+        'Status': t.status,
+        'RSI': fmt2(t.rsi),
+        'Change%': pct2(t.change_pct),
+        'EMA5': fmt2(t.ema5),
+        'EMA20': fmt2(t.ema20),
+        'Close': fmt2(t.close),
+        'Vol': nfi.format(Math.round(t.vol||0)),
+        'Vol avg20': nfi.format(Math.round(t.vol_avg20||0)),
+        'Notater': (t.notes||[]).slice(0,2).join('; ')
+      };
+      Object.entries(rows).forEach(([k,v])=>{
+        kv.appendChild(el('div','',k+':'));
+        const d = el('div','',String(v)); 
+        if (k==='Status'){ d.innerHTML=''; d.appendChild(statusBadge(t.status)); }
+        kv.appendChild(d);
+      });
+      c.appendChild(kv);
+      return c;
+    }
+    function renderTrendCards(list){
+      const wrap = document.getElementById('trendCards');
+      wrap.innerHTML='';
+      // Sorter: DOWN -> WATCH -> UP, deretter lav score først
+      const order = {DOWN:0, WATCH:1, UP:2};
+      (list||[]).slice().sort((a,b)=>{
+        const oa = order[a.status] ?? 1, ob = order[b.status] ?? 1;
+        if (oa!==ob) return oa-ob;
+        return (a.score??0) - (b.score??0);
+      }).forEach(t => wrap.appendChild(trendCard(t)));
+    }
+    function renderTrendTable(list){
+      const wrap = document.getElementById('trendTableWrap');
+      wrap.innerHTML='';
+      const title = el('div','muted','Detaljert trendtabell');
+      wrap.appendChild(title);
+
+      const table = document.createElement('table');
+      const thead = document.createElement('thead');
+      thead.innerHTML = `
+        <tr>
+          <th>Ticker</th><th>Status</th><th>Score</th><th>RSI</th>
+          <th>EMA5</th><th>EMA20</th><th>Close</th><th>Change%</th>
+          <th>Vol</th><th>Vol avg20</th><th>Notater</th>
+        </tr>`;
+      const tbody = document.createElement('tbody');
+
+      const order = {DOWN:0, WATCH:1, UP:2};
+      (list||[]).slice().sort((a,b)=>{
+        const oa = order[a.status] ?? 1, ob = order[b.status] ?? 1;
+        if (oa!==ob) return oa-ob;
+        return (a.score??0) - (b.score??0);
+      }).forEach(t=>{
+        const tr = document.createElement('tr');
+        const td = (x)=>{ const d=document.createElement('td'); d.textContent=x; return d; };
+
+        tr.appendChild(td(t.ticker));
+        const st = document.createElement('td'); st.appendChild(statusBadge(t.status)); tr.appendChild(st);
+        tr.appendChild(td(String(t.score ?? '')));
+        tr.appendChild(td(fmt2(t.rsi)));
+        tr.appendChild(td(fmt2(t.ema5)));
+        tr.appendChild(td(fmt2(t.ema20)));
+        tr.appendChild(td(fmt2(t.close)));
+        tr.appendChild(td(pct2(t.change_pct)));
+        tr.appendChild(td(nfi.format(Math.round(t.vol||0))));
+        tr.appendChild(td(nfi.format(Math.round(t.vol_avg20||0))));
+        tr.appendChild(td((t.notes||[]).join('; ')));
+        tbody.appendChild(tr);
+      });
+
+      table.appendChild(thead); table.appendChild(tbody);
+      wrap.appendChild(table);
+    }
+
+    // ---------- Signalkort ----------
+    function matchesFilter(s, txt, type, minScore){
+      if (minScore && (s.score||0) < minScore) return false;
+      if (type && (s.type||'') !== type) return false;
+      if (!txt) return true;
+      return JSON.stringify(s).toLowerCase().includes(txt.toLowerCase());
+    }
+    function signalCard(s){
+      const c = el('div','card');
+      c.appendChild(el('div','badge', s.type||''));
+      c.appendChild(el('div','score','Score: '+(s.score||0)));
+      const kv = el('div','kvs'); const skip=new Set(['type','score']);
+      for (const [k,v] of Object.entries(s)){
+        if (skip.has(k)) continue;
+        kv.appendChild(el('div','',k+':'));
+        if (k==='url' || k==='link'){
+          const a=document.createElement('a'); a.href=v; a.textContent=v; a.target='_blank';
+          const w=el('div'); w.appendChild(a); kv.appendChild(w);
+        } else if (k==='change_pct'){
+          kv.appendChild(el('div','', pct2(v)));
+        } else if (typeof v==='number'){
+          kv.appendChild(el('div','', fmt2(v)));
+        } else {
+          kv.appendChild(el('div','', String(v)));
+        }
+      }
+      c.appendChild(kv);
+      return c;
+    }
+
+    // ---------- Init ----------
+    (async ()=>{
+      const data = await getJSON('data.json');
+      const sigs = await getJSON('signals.json');
+
+      // oversikt
+      const ov = document.getElementById('overview');
+      ov.appendChild(infoCard(data));
+      ov.appendChild(pricesCard(data));
+
+      // trend (kort + tabell)
+      renderTrendCards(data.trend||[]);
+      renderTrendTable(data.trend||[]);
+
+      // signal-seksjoner
+      const $today=document.getElementById('today');
+      const $week=document.getElementById('week');
+      const $hist=document.getElementById('history');
+
+      const todayIso=(new Date()).toISOString().slice(0,10);
+      const weekCut=new Date(Date.now()-7*86400000).toISOString();
+
+      function renderSignals(){
+        const txt=document.getElementById('q').value.trim();
+        const typ=document.getElementById('type').value;
+        const minS=parseInt(document.getElementById('minScore').value||'0',10);
+        [$today,$week,$hist].forEach(n=>n.innerHTML='');
+        (sigs||[]).forEach(s=>{
+          if (!matchesFilter(s,txt,typ,minS)) return;
+          const ts=s.ts||'';
+          const cardEl=signalCard(s);
+          if (ts>=weekCut){
+            if (ts.startsWith(todayIso)) $today.appendChild(cardEl);
+            else $week.appendChild(cardEl);
+          } else {
+            $hist.appendChild(cardEl);
+          }
+        });
+      }
+      renderSignals();
+      document.getElementById('q').addEventListener('input', renderSignals);
+      document.getElementById('type').addEventListener('change', renderSignals);
+      document.getElementById('minScore').addEventListener('change', renderSignals);
+    })();
   </script>
 </body>
 </html>
