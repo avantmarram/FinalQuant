@@ -1,1400 +1,1600 @@
 [
   {
     "type": "PRICE_SPIKE",
-    "ticker": "RGTI",
-    "change_pct": 23.73,
-    "score": 8
+    "ticker": "QBTS",
+    "change_pct": 21.62,
+    "score": 8,
+    "ts": "2025-10-14T05:51:50.077817+00:00Z"
   },
   {
     "type": "PRICE_SPIKE",
-    "ticker": "QBTS",
-    "change_pct": 21.62,
-    "score": 8
+    "ticker": "RGTI",
+    "change_pct": 23.73,
+    "score": 8,
+    "ts": "2025-10-14T05:51:49.779047+00:00Z"
+  },
+  {
+    "type": "ARXIV",
+    "title": "Ev4DGS: Novel-view Rendering of Non-Rigid Objects from Monocular Event\n  Streams",
+    "published": "2025-10-13T17:59:55Z",
+    "link": "http://arxiv.org/abs/2510.11717v1",
+    "score": 3,
+    "ts": "2025-10-13T17:59:55+00:00Z"
+  },
+  {
+    "type": "ARXIV",
+    "title": "CodePlot-CoT: Mathematical Visual Reasoning by Thinking with Code-Driven\n  Images",
+    "published": "2025-10-13T17:59:55Z",
+    "link": "http://arxiv.org/abs/2510.11718v1",
+    "score": 3,
+    "ts": "2025-10-13T17:59:55+00:00Z"
+  },
+  {
+    "type": "ARXIV",
+    "title": "Ev4DGS: Novel-view Rendering of Non-Rigid Objects from Monocular Event\n  Streams",
+    "published": "2025-10-13T17:59:55Z",
+    "link": "http://arxiv.org/abs/2510.11717v1",
+    "score": 3,
+    "ts": "2025-10-13T17:59:55+00:00Z"
+  },
+  {
+    "type": "ARXIV",
+    "title": "CodePlot-CoT: Mathematical Visual Reasoning by Thinking with Code-Driven\n  Images",
+    "published": "2025-10-13T17:59:55Z",
+    "link": "http://arxiv.org/abs/2510.11718v1",
+    "score": 3,
+    "ts": "2025-10-13T17:59:55+00:00Z"
+  },
+  {
+    "type": "ARXIV",
+    "title": "Meson-antimeson mixing",
+    "published": "2025-10-13T17:59:53Z",
+    "link": "http://arxiv.org/abs/2510.11716v1",
+    "score": 3,
+    "ts": "2025-10-13T17:59:53+00:00Z"
+  },
+  {
+    "type": "ARXIV",
+    "title": "Meson-antimeson mixing",
+    "published": "2025-10-13T17:59:53Z",
+    "link": "http://arxiv.org/abs/2510.11716v1",
+    "score": 3,
+    "ts": "2025-10-13T17:59:53+00:00Z"
+  },
+  {
+    "type": "ARXIV",
+    "title": "Meson-antimeson mixing",
+    "published": "2025-10-13T17:59:53Z",
+    "link": "http://arxiv.org/abs/2510.11716v1",
+    "score": 3,
+    "ts": "2025-10-13T17:59:53+00:00Z"
+  },
+  {
+    "type": "ARXIV",
+    "title": "Meson-antimeson mixing",
+    "published": "2025-10-13T17:59:53Z",
+    "link": "http://arxiv.org/abs/2510.11716v1",
+    "score": 3,
+    "ts": "2025-10-13T17:59:53+00:00Z"
+  },
+  {
+    "type": "ARXIV",
+    "title": "Meson-antimeson mixing",
+    "published": "2025-10-13T17:59:53Z",
+    "link": "http://arxiv.org/abs/2510.11716v1",
+    "score": 3,
+    "ts": "2025-10-13T17:59:53+00:00Z"
+  },
+  {
+    "type": "ARXIV",
+    "title": "Point Prompting: Counterfactual Tracking with Video Diffusion Models",
+    "published": "2025-10-13T17:59:46Z",
+    "link": "http://arxiv.org/abs/2510.11715v1",
+    "score": 5,
+    "ts": "2025-10-13T17:59:46+00:00Z"
+  },
+  {
+    "type": "ARXIV",
+    "title": "Point Prompting: Counterfactual Tracking with Video Diffusion Models",
+    "published": "2025-10-13T17:59:46Z",
+    "link": "http://arxiv.org/abs/2510.11715v1",
+    "score": 5,
+    "ts": "2025-10-13T17:59:46+00:00Z"
+  },
+  {
+    "type": "ARXIV",
+    "title": "Are Large Reasoning Models Interruptible?",
+    "published": "2025-10-13T17:59:35Z",
+    "link": "http://arxiv.org/abs/2510.11713v1",
+    "score": 3,
+    "ts": "2025-10-13T17:59:35+00:00Z"
+  },
+  {
+    "type": "ARXIV",
+    "title": "Are Large Reasoning Models Interruptible?",
+    "published": "2025-10-13T17:59:35Z",
+    "link": "http://arxiv.org/abs/2510.11713v1",
+    "score": 3,
+    "ts": "2025-10-13T17:59:35+00:00Z"
+  },
+  {
+    "type": "ARXIV",
+    "title": "DiT360: High-Fidelity Panoramic Image Generation via Hybrid Training",
+    "published": "2025-10-13T17:59:15Z",
+    "link": "http://arxiv.org/abs/2510.11712v1",
+    "score": 5,
+    "ts": "2025-10-13T17:59:15+00:00Z"
+  },
+  {
+    "type": "ARXIV",
+    "title": "DiT360: High-Fidelity Panoramic Image Generation via Hybrid Training",
+    "published": "2025-10-13T17:59:15Z",
+    "link": "http://arxiv.org/abs/2510.11712v1",
+    "score": 5,
+    "ts": "2025-10-13T17:59:15+00:00Z"
+  },
+  {
+    "type": "ARXIV",
+    "title": "Comparing Symmetrized Determinant Neural Quantum States for the Hubbard\n  Model",
+    "published": "2025-10-13T17:59:10Z",
+    "link": "http://arxiv.org/abs/2510.11710v1",
+    "score": 3,
+    "ts": "2025-10-13T17:59:10+00:00Z"
+  },
+  {
+    "type": "ARXIV",
+    "title": "Comparing Symmetrized Determinant Neural Quantum States for the Hubbard\n  Model",
+    "published": "2025-10-13T17:59:10Z",
+    "link": "http://arxiv.org/abs/2510.11710v1",
+    "score": 3,
+    "ts": "2025-10-13T17:59:10+00:00Z"
+  },
+  {
+    "type": "ARXIV",
+    "title": "Comparing Symmetrized Determinant Neural Quantum States for the Hubbard\n  Model",
+    "published": "2025-10-13T17:59:10Z",
+    "link": "http://arxiv.org/abs/2510.11710v1",
+    "score": 3,
+    "ts": "2025-10-13T17:59:10+00:00Z"
+  },
+  {
+    "type": "ARXIV",
+    "title": "Comparing Symmetrized Determinant Neural Quantum States for the Hubbard\n  Model",
+    "published": "2025-10-13T17:59:10Z",
+    "link": "http://arxiv.org/abs/2510.11710v1",
+    "score": 3,
+    "ts": "2025-10-13T17:59:10+00:00Z"
+  },
+  {
+    "type": "ARXIV",
+    "title": "Comparing Symmetrized Determinant Neural Quantum States for the Hubbard\n  Model",
+    "published": "2025-10-13T17:59:10Z",
+    "link": "http://arxiv.org/abs/2510.11710v1",
+    "score": 3,
+    "ts": "2025-10-13T17:59:10+00:00Z"
+  },
+  {
+    "type": "ARXIV",
+    "title": "Adversarial Attacks Leverage Interference Between Features in\n  Superposition",
+    "published": "2025-10-13T17:59:02Z",
+    "link": "http://arxiv.org/abs/2510.11709v1",
+    "score": 5,
+    "ts": "2025-10-13T17:59:02+00:00Z"
+  },
+  {
+    "type": "ARXIV",
+    "title": "Adversarial Attacks Leverage Interference Between Features in\n  Superposition",
+    "published": "2025-10-13T17:59:02Z",
+    "link": "http://arxiv.org/abs/2510.11709v1",
+    "score": 5,
+    "ts": "2025-10-13T17:59:02+00:00Z"
+  },
+  {
+    "type": "ARXIV",
+    "title": "Simultaneous Frequentist Calibration of Confidence Regions for Multiple\n  Functionals in Constrained Inverse Problems",
+    "published": "2025-10-13T17:58:56Z",
+    "link": "http://arxiv.org/abs/2510.11708v1",
+    "score": 5,
+    "ts": "2025-10-13T17:58:56+00:00Z"
+  },
+  {
+    "type": "ARXIV",
+    "title": "Chirality reversal at finite magnetic impurity strength and local\n  signatures of a topological phase transition",
+    "published": "2025-10-13T17:58:06Z",
+    "link": "http://arxiv.org/abs/2510.11707v1",
+    "score": 5,
+    "ts": "2025-10-13T17:58:06+00:00Z"
+  },
+  {
+    "type": "ARXIV",
+    "title": "Chirality reversal at finite magnetic impurity strength and local\n  signatures of a topological phase transition",
+    "published": "2025-10-13T17:58:06Z",
+    "link": "http://arxiv.org/abs/2510.11707v1",
+    "score": 5,
+    "ts": "2025-10-13T17:58:06+00:00Z"
+  },
+  {
+    "type": "ARXIV",
+    "title": "Probing emergent prethermal dynamics and resonant melting on a\n  programmable quantum simulator",
+    "published": "2025-10-13T17:58:04Z",
+    "link": "http://arxiv.org/abs/2510.11706v1",
+    "score": 3,
+    "ts": "2025-10-13T17:58:04+00:00Z"
+  },
+  {
+    "type": "ARXIV",
+    "title": "Probing emergent prethermal dynamics and resonant melting on a\n  programmable quantum simulator",
+    "published": "2025-10-13T17:58:04Z",
+    "link": "http://arxiv.org/abs/2510.11706v1",
+    "score": 3,
+    "ts": "2025-10-13T17:58:04+00:00Z"
+  },
+  {
+    "type": "ARXIV",
+    "title": "Probing emergent prethermal dynamics and resonant melting on a\n  programmable quantum simulator",
+    "published": "2025-10-13T17:58:04Z",
+    "link": "http://arxiv.org/abs/2510.11706v1",
+    "score": 3,
+    "ts": "2025-10-13T17:58:04+00:00Z"
+  },
+  {
+    "type": "ARXIV",
+    "title": "Probing emergent prethermal dynamics and resonant melting on a\n  programmable quantum simulator",
+    "published": "2025-10-13T17:58:04Z",
+    "link": "http://arxiv.org/abs/2510.11706v1",
+    "score": 3,
+    "ts": "2025-10-13T17:58:04+00:00Z"
+  },
+  {
+    "type": "ARXIV",
+    "title": "Probing emergent prethermal dynamics and resonant melting on a\n  programmable quantum simulator",
+    "published": "2025-10-13T17:58:04Z",
+    "link": "http://arxiv.org/abs/2510.11706v1",
+    "score": 3,
+    "ts": "2025-10-13T17:58:04+00:00Z"
+  },
+  {
+    "type": "ARXIV",
+    "title": "The Sunburst Arc with JWST. IV. The importance of interaction,\n  turbulence, and feedback for Lyman-continuum escape",
+    "published": "2025-10-13T17:57:29Z",
+    "link": "http://arxiv.org/abs/2510.11702v1",
+    "score": 5,
+    "ts": "2025-10-13T17:57:29+00:00Z"
+  },
+  {
+    "type": "ARXIV",
+    "title": "Hybridization of second-order gravitational self-force and numerical\n  relativity waveforms for quasi-circular and non-spinning black hole binaries",
+    "published": "2025-10-13T17:49:00Z",
+    "link": "http://arxiv.org/abs/2510.11685v1",
+    "score": 5,
+    "ts": "2025-10-13T17:49:00+00:00Z"
+  },
+  {
+    "type": "ARXIV",
+    "title": "Hybridization of second-order gravitational self-force and numerical\n  relativity waveforms for quasi-circular and non-spinning black hole binaries",
+    "published": "2025-10-13T17:49:00Z",
+    "link": "http://arxiv.org/abs/2510.11685v1",
+    "score": 5,
+    "ts": "2025-10-13T17:49:00+00:00Z"
+  },
+  {
+    "type": "ARXIV",
+    "title": "Hybridization of second-order gravitational self-force and numerical\n  relativity waveforms for quasi-circular and non-spinning black hole binaries",
+    "published": "2025-10-13T17:49:00Z",
+    "link": "http://arxiv.org/abs/2510.11685v1",
+    "score": 5,
+    "ts": "2025-10-13T17:49:00+00:00Z"
+  },
+  {
+    "type": "ARXIV",
+    "title": "The Magic Barrier before Thermalization",
+    "published": "2025-10-13T17:47:22Z",
+    "link": "http://arxiv.org/abs/2510.11681v1",
+    "score": 5,
+    "ts": "2025-10-13T17:47:22+00:00Z"
+  },
+  {
+    "type": "ARXIV",
+    "title": "The Magic Barrier before Thermalization",
+    "published": "2025-10-13T17:47:22Z",
+    "link": "http://arxiv.org/abs/2510.11681v1",
+    "score": 5,
+    "ts": "2025-10-13T17:47:22+00:00Z"
+  },
+  {
+    "type": "ARXIV",
+    "title": "Observation of ballistic plasma and memory in high-energy gauge theory\n  dynamics",
+    "published": "2025-10-13T17:46:31Z",
+    "link": "http://arxiv.org/abs/2510.11679v1",
+    "score": 5,
+    "ts": "2025-10-13T17:46:31+00:00Z"
+  },
+  {
+    "type": "ARXIV",
+    "title": "Observation of ballistic plasma and memory in high-energy gauge theory\n  dynamics",
+    "published": "2025-10-13T17:46:31Z",
+    "link": "http://arxiv.org/abs/2510.11679v1",
+    "score": 5,
+    "ts": "2025-10-13T17:46:31+00:00Z"
+  },
+  {
+    "type": "ARXIV",
+    "title": "Spinon Mediation of Witness-Spin Dynamics and Ground State in\n  Herbertsmithite",
+    "published": "2025-10-13T17:46:03Z",
+    "link": "http://arxiv.org/abs/2510.11678v1",
+    "score": 5,
+    "ts": "2025-10-13T17:46:03+00:00Z"
+  },
+  {
+    "type": "ARXIV",
+    "title": "Spinon Mediation of Witness-Spin Dynamics and Ground State in\n  Herbertsmithite",
+    "published": "2025-10-13T17:46:03Z",
+    "link": "http://arxiv.org/abs/2510.11678v1",
+    "score": 5,
+    "ts": "2025-10-13T17:46:03+00:00Z"
+  },
+  {
+    "type": "ARXIV",
+    "title": "GraviGUT unification with revisited Pati-Salam model",
+    "published": "2025-10-13T17:44:38Z",
+    "link": "http://arxiv.org/abs/2510.11674v1",
+    "score": 5,
+    "ts": "2025-10-13T17:44:38+00:00Z"
+  },
+  {
+    "type": "ARXIV",
+    "title": "GraviGUT unification with revisited Pati-Salam model",
+    "published": "2025-10-13T17:44:38Z",
+    "link": "http://arxiv.org/abs/2510.11674v1",
+    "score": 5,
+    "ts": "2025-10-13T17:44:38+00:00Z"
+  },
+  {
+    "type": "ARXIV",
+    "title": "Finite-temperature phase diagram and collective modes of coherently\n  coupled Bose mixtures",
+    "published": "2025-10-13T17:43:24Z",
+    "link": "http://arxiv.org/abs/2510.11671v1",
+    "score": 3,
+    "ts": "2025-10-13T17:43:24+00:00Z"
+  },
+  {
+    "type": "ARXIV",
+    "title": "Finite-temperature phase diagram and collective modes of coherently\n  coupled Bose mixtures",
+    "published": "2025-10-13T17:43:24Z",
+    "link": "http://arxiv.org/abs/2510.11671v1",
+    "score": 3,
+    "ts": "2025-10-13T17:43:24+00:00Z"
+  },
+  {
+    "type": "ARXIV",
+    "title": "Scattering and Absorption of Standard Model Fields by Brane-Localized\n  Schwarzschild--de Sitter Black Holes",
+    "published": "2025-10-13T17:24:58Z",
+    "link": "http://arxiv.org/abs/2510.11643v1",
+    "score": 5,
+    "ts": "2025-10-13T17:24:58+00:00Z"
+  },
+  {
+    "type": "ARXIV",
+    "title": "Scattering and Absorption of Standard Model Fields by Brane-Localized\n  Schwarzschild--de Sitter Black Holes",
+    "published": "2025-10-13T17:24:58Z",
+    "link": "http://arxiv.org/abs/2510.11643v1",
+    "score": 5,
+    "ts": "2025-10-13T17:24:58+00:00Z"
+  },
+  {
+    "type": "ARXIV",
+    "title": "Hierarchical Qubit-Merging Transformer for Quantum Error Correction",
+    "published": "2025-10-13T16:31:46Z",
+    "link": "http://arxiv.org/abs/2510.11593v1",
+    "score": 5,
+    "ts": "2025-10-13T16:31:46+00:00Z"
+  },
+  {
+    "type": "ARXIV",
+    "title": "Astigmatism-free 3D Optical Tweezer Control for Rapid Atom Rearrangement",
+    "published": "2025-10-13T14:23:40Z",
+    "link": "http://arxiv.org/abs/2510.11451v1",
+    "score": 3,
+    "ts": "2025-10-13T14:23:40+00:00Z"
+  },
+  {
+    "type": "ARXIV",
+    "title": "Intermediate chiral edge states in quantum Hall Josephson junctions",
+    "published": "2025-10-13T14:04:39Z",
+    "link": "http://arxiv.org/abs/2510.11432v1",
+    "score": 5,
+    "ts": "2025-10-13T14:04:39+00:00Z"
+  },
+  {
+    "type": "ARXIV",
+    "title": "Disorder-Induced Strongly Correlated Photons in Waveguide QED",
+    "published": "2025-10-13T13:16:20Z",
+    "link": "http://arxiv.org/abs/2510.11376v1",
+    "score": 3,
+    "ts": "2025-10-13T13:16:20+00:00Z"
+  },
+  {
+    "type": "ARXIV",
+    "title": "Nonequilibrium spin-splitter effect in altermagnet superconductor\n  hybrids",
+    "published": "2025-10-13T12:49:51Z",
+    "link": "http://arxiv.org/abs/2510.11355v1",
+    "score": 5,
+    "ts": "2025-10-13T12:49:51+00:00Z"
+  },
+  {
+    "type": "ARXIV",
+    "title": "Electron-phonon coupling in magnetic materials using the local spin\n  density approximation",
+    "published": "2025-10-13T12:45:25Z",
+    "link": "http://arxiv.org/abs/2510.11350v1",
+    "score": 5,
+    "ts": "2025-10-13T12:45:25+00:00Z"
+  },
+  {
+    "type": "ARXIV",
+    "title": "One-dimensional topological superconductors with nonsymmorphic\n  symmetries",
+    "published": "2025-10-13T12:38:25Z",
+    "link": "http://arxiv.org/abs/2510.11342v1",
+    "score": 5,
+    "ts": "2025-10-13T12:38:25+00:00Z"
+  },
+  {
+    "type": "ARXIV",
+    "title": "Superconducting spin valve effect in Fe/Si$_3$N$_4$/Pb/Si$_3$N$_4$/Fe\n  heterostructures",
+    "published": "2025-10-13T12:26:42Z",
+    "link": "http://arxiv.org/abs/2510.11333v1",
+    "score": 5,
+    "ts": "2025-10-13T12:26:42+00:00Z"
+  },
+  {
+    "type": "ARXIV",
+    "title": "Experimental Demonstration of the PBR Test on a Superconducting\n  Processor",
+    "published": "2025-10-13T09:46:52Z",
+    "link": "http://arxiv.org/abs/2510.11213v1",
+    "score": 5,
+    "ts": "2025-10-13T09:46:52+00:00Z"
+  },
+  {
+    "type": "ARXIV",
+    "title": "Hot-Starting Quantum Portfolio Optimization",
+    "published": "2025-10-13T08:47:43Z",
+    "link": "http://arxiv.org/abs/2510.11153v1",
+    "score": 5,
+    "ts": "2025-10-13T08:47:43+00:00Z"
+  },
+  {
+    "type": "NEWS",
+    "title": "French tech company announces new headquarters at Chicago quantum research park",
+    "url": "https://www.wjbc.com/2025/10/10/french-tech-company-announces-new-headquarters-at-chicago-quantum-research-park/",
+    "seen": "20251010T174500Z",
+    "score": 3,
+    "ts": "2025-10-10T17:45:00+00:00Z"
+  },
+  {
+    "type": "NEWS",
+    "title": "French tech company announces new headquarters at Chicago quantum research park",
+    "url": "https://pantagraph.com/news/state-regional/government-politics/article_b5b70671-a06f-4912-b38c-ee76b78a992e.html",
+    "seen": "20251010T060000Z",
+    "score": 3,
+    "ts": "2025-10-10T06:00:00+00:00Z"
+  },
+  {
+    "type": "NEWS",
+    "title": "French tech company announces new headquarters at Chicago quantum research park",
+    "url": "https://www.northernpublicradio.org/illinois/2025-10-09/french-tech-company-announces-new-headquarters-at-chicago-quantum-research-park",
+    "seen": "20251010T003000Z",
+    "score": 3,
+    "ts": "2025-10-10T00:30:00+00:00Z"
+  },
+  {
+    "type": "NEWS",
+    "title": "French tech company announces new headquarters at Chicago quantum research park",
+    "url": "https://www.wsiu.org/state-of-illinois/2025-10-09/french-tech-company-announces-new-headquarters-at-chicago-quantum-research-park",
+    "seen": "20251010T003000Z",
+    "score": 3,
+    "ts": "2025-10-10T00:30:00+00:00Z"
   },
   {
     "type": "SEC_FILING",
-    "ticker": "RGTI",
-    "form": "8-K",
-    "filed": "2022-12-19",
-    "score": 7
+    "ticker": "IONQ",
+    "form": "424B5",
+    "filed": "2025-10-10",
+    "score": 5,
+    "ts": "2025-10-10T00:00:00Z"
   },
   {
     "type": "SEC_FILING",
-    "ticker": "RGTI",
-    "form": "8-K",
-    "filed": "2022-12-16",
-    "score": 7
+    "ticker": "IONQ",
+    "form": "424B5",
+    "filed": "2025-10-10",
+    "score": 5,
+    "ts": "2025-10-10T00:00:00Z"
+  },
+  {
+    "type": "NEWS",
+    "title": "French tech company announces new headquarters at Chicago quantum research park",
+    "url": "https://www.wglt.org/illinois/2025-10-09/french-tech-company-announces-new-headquarters-at-chicago-quantum-research-park",
+    "seen": "20251009T234500Z",
+    "score": 3,
+    "ts": "2025-10-09T23:45:00+00:00Z"
+  },
+  {
+    "type": "NEWS",
+    "title": "Churchill Capital Corp X ( CCCX ) Stock Jumps On Infleqtion , Silicon Light Machines Partnership - Churchill Capital ( NASDAQ : CCCX ) ",
+    "url": "https://www.benzinga.com/trading-ideas/movers/25/10/48135210/churchill-capital-corp-x-cccx-stock-jumps-on-infleqtion-silicon-light-machines-partnership",
+    "seen": "20251009T194500Z",
+    "score": 4,
+    "ts": "2025-10-09T19:45:00+00:00Z"
+  },
+  {
+    "type": "NEWS",
+    "title": "French firm Pasqal announces U . S . headquarters at South Chicago quantum computing park",
+    "url": "https://chicago.suntimes.com/technology/2025/10/09/french-pasqal-us-headquarters-south-works-quantum-computing-park",
+    "seen": "20251009T174500Z",
+    "score": 3,
+    "ts": "2025-10-09T17:45:00+00:00Z"
+  },
+  {
+    "type": "ARXIV",
+    "title": "An HPC-Inspired Blueprint for a Technology-Agnostic Quantum Middle Layer",
+    "published": "2025-10-08T14:39:19Z",
+    "link": "http://arxiv.org/abs/2510.07079v1",
+    "score": 3,
+    "ts": "2025-10-08T14:39:19+00:00Z"
   },
   {
     "type": "SEC_FILING",
-    "ticker": "RGTI",
-    "form": "8-K",
-    "filed": "2022-12-09",
-    "score": 7
+    "ticker": "IONQ",
+    "form": "4",
+    "filed": "2025-10-08",
+    "score": 5,
+    "ts": "2025-10-08T00:00:00Z"
   },
   {
     "type": "SEC_FILING",
-    "ticker": "RGTI",
-    "form": "10-Q",
-    "filed": "2022-11-14",
-    "score": 7
-  },
-  {
-    "type": "SEC_FILING",
-    "ticker": "RGTI",
-    "form": "10-Q",
-    "filed": "2022-08-15",
-    "score": 7
-  },
-  {
-    "type": "SEC_FILING",
-    "ticker": "RGTI",
-    "form": "10-Q",
-    "filed": "2022-05-16",
-    "score": 7
-  },
-  {
-    "type": "SEC_FILING",
-    "ticker": "RGTI",
-    "form": "10-K",
-    "filed": "2022-04-13",
-    "score": 7
-  },
-  {
-    "type": "SEC_FILING",
-    "ticker": "RGTI",
-    "form": "8-K",
-    "filed": "2021-11-22",
-    "score": 7
-  },
-  {
-    "type": "SEC_FILING",
-    "ticker": "RGTI",
-    "form": "10-Q",
-    "filed": "2021-11-22",
-    "score": 7
-  },
-  {
-    "type": "SEC_FILING",
-    "ticker": "RGTI",
-    "form": "10-Q",
-    "filed": "2021-08-13",
-    "score": 7
-  },
-  {
-    "type": "SEC_FILING",
-    "ticker": "RGTI",
-    "form": "10-Q",
-    "filed": "2021-05-24",
-    "score": 7
-  },
-  {
-    "type": "SEC_FILING",
-    "ticker": "RGTI",
-    "form": "8-K",
-    "filed": "2021-05-24",
-    "score": 7
-  },
-  {
-    "type": "SEC_FILING",
-    "ticker": "RGTI",
-    "form": "8-K",
-    "filed": "2021-04-07",
-    "score": 7
-  },
-  {
-    "type": "SEC_FILING",
-    "ticker": "RGTI",
-    "form": "8-K",
-    "filed": "2021-03-01",
-    "score": 7
-  },
-  {
-    "type": "SEC_FILING",
-    "ticker": "RGTI",
-    "form": "8-K",
-    "filed": "2021-02-24",
-    "score": 7
-  },
-  {
-    "type": "SEC_FILING",
-    "ticker": "RGTI",
-    "form": "S-1",
-    "filed": "2021-02-03",
-    "score": 7
+    "ticker": "IONQ",
+    "form": "3",
+    "filed": "2025-10-08",
+    "score": 5,
+    "ts": "2025-10-08T00:00:00Z"
   },
   {
     "type": "SEC_FILING",
     "ticker": "IONQ",
     "form": "8-K",
     "filed": "2025-10-07",
-    "score": 7
+    "score": 6,
+    "ts": "2025-10-07T00:00:00Z"
   },
   {
     "type": "SEC_FILING",
     "ticker": "IONQ",
-    "form": "8-K",
-    "filed": "2025-09-29",
-    "score": 7
+    "form": "144",
+    "filed": "2025-10-07",
+    "score": 4,
+    "ts": "2025-10-07T00:00:00Z"
   },
   {
-    "type": "SEC_FILING",
-    "ticker": "IONQ",
-    "form": "8-K",
-    "filed": "2025-09-17",
-    "score": 7
-  },
-  {
-    "type": "SEC_FILING",
-    "ticker": "IONQ",
-    "form": "8-K",
-    "filed": "2025-09-04",
-    "score": 7
-  },
-  {
-    "type": "SEC_FILING",
-    "ticker": "IONQ",
-    "form": "8-K",
-    "filed": "2025-08-28",
-    "score": 7
-  },
-  {
-    "type": "SEC_FILING",
-    "ticker": "IONQ",
-    "form": "8-K",
-    "filed": "2025-08-28",
-    "score": 7
-  },
-  {
-    "type": "SEC_FILING",
-    "ticker": "IONQ",
-    "form": "8-K",
-    "filed": "2025-08-15",
-    "score": 7
-  },
-  {
-    "type": "SEC_FILING",
-    "ticker": "IONQ",
-    "form": "8-K",
-    "filed": "2025-08-11",
-    "score": 7
-  },
-  {
-    "type": "SEC_FILING",
-    "ticker": "IONQ",
-    "form": "8-K",
-    "filed": "2025-08-06",
-    "score": 7
-  },
-  {
-    "type": "SEC_FILING",
-    "ticker": "IONQ",
-    "form": "10-Q",
-    "filed": "2025-08-06",
-    "score": 7
-  },
-  {
-    "type": "SEC_FILING",
-    "ticker": "IONQ",
-    "form": "8-K",
-    "filed": "2025-08-06",
-    "score": 7
-  },
-  {
-    "type": "SEC_FILING",
-    "ticker": "IONQ",
-    "form": "8-K",
-    "filed": "2025-07-15",
-    "score": 7
-  },
-  {
-    "type": "SEC_FILING",
-    "ticker": "IONQ",
-    "form": "8-K",
-    "filed": "2025-07-09",
-    "score": 7
-  },
-  {
-    "type": "SEC_FILING",
-    "ticker": "IONQ",
-    "form": "8-K",
-    "filed": "2025-06-20",
-    "score": 7
-  },
-  {
-    "type": "SEC_FILING",
-    "ticker": "IONQ",
-    "form": "8-K",
-    "filed": "2025-06-09",
-    "score": 7
-  },
-  {
-    "type": "SEC_FILING",
-    "ticker": "IONQ",
-    "form": "8-K",
-    "filed": "2025-06-09",
-    "score": 7
-  },
-  {
-    "type": "SEC_FILING",
-    "ticker": "IONQ",
-    "form": "8-K",
-    "filed": "2025-06-02",
-    "score": 7
-  },
-  {
-    "type": "SEC_FILING",
-    "ticker": "IONQ",
-    "form": "10-Q",
-    "filed": "2025-05-07",
-    "score": 7
-  },
-  {
-    "type": "SEC_FILING",
-    "ticker": "IONQ",
-    "form": "8-K",
-    "filed": "2025-05-07",
-    "score": 7
-  },
-  {
-    "type": "SEC_FILING",
-    "ticker": "IONQ",
-    "form": "8-K",
-    "filed": "2025-05-06",
-    "score": 7
-  },
-  {
-    "type": "SEC_FILING",
-    "ticker": "IONQ",
-    "form": "8-K",
-    "filed": "2025-04-22",
-    "score": 7
-  },
-  {
-    "type": "SEC_FILING",
-    "ticker": "IONQ",
-    "form": "8-K",
-    "filed": "2025-03-11",
-    "score": 7
-  },
-  {
-    "type": "SEC_FILING",
-    "ticker": "IONQ",
-    "form": "8-K",
-    "filed": "2025-02-27",
-    "score": 7
-  },
-  {
-    "type": "SEC_FILING",
-    "ticker": "IONQ",
-    "form": "10-K",
-    "filed": "2025-02-26",
-    "score": 7
-  },
-  {
-    "type": "SEC_FILING",
-    "ticker": "IONQ",
-    "form": "8-K",
-    "filed": "2025-02-26",
-    "score": 7
-  },
-  {
-    "type": "SEC_FILING",
-    "ticker": "IONQ",
-    "form": "8-K",
-    "filed": "2024-12-20",
-    "score": 7
-  },
-  {
-    "type": "SEC_FILING",
-    "ticker": "IONQ",
-    "form": "8-K",
-    "filed": "2024-12-06",
-    "score": 7
-  },
-  {
-    "type": "SEC_FILING",
-    "ticker": "IONQ",
-    "form": "10-Q",
-    "filed": "2024-11-06",
-    "score": 7
-  },
-  {
-    "type": "SEC_FILING",
-    "ticker": "IONQ",
-    "form": "8-K",
-    "filed": "2024-11-06",
-    "score": 7
-  },
-  {
-    "type": "SEC_FILING",
-    "ticker": "IONQ",
-    "form": "10-Q",
-    "filed": "2024-08-07",
-    "score": 7
-  },
-  {
-    "type": "SEC_FILING",
-    "ticker": "IONQ",
-    "form": "8-K",
-    "filed": "2024-08-07",
-    "score": 7
-  },
-  {
-    "type": "SEC_FILING",
-    "ticker": "IONQ",
-    "form": "8-K",
-    "filed": "2024-06-07",
-    "score": 7
-  },
-  {
-    "type": "SEC_FILING",
-    "ticker": "IONQ",
-    "form": "10-Q",
-    "filed": "2024-05-10",
-    "score": 7
-  },
-  {
-    "type": "SEC_FILING",
-    "ticker": "IONQ",
-    "form": "8-K",
-    "filed": "2024-05-08",
-    "score": 7
-  },
-  {
-    "type": "SEC_FILING",
-    "ticker": "IONQ",
-    "form": "10-K",
-    "filed": "2024-02-28",
-    "score": 7
-  },
-  {
-    "type": "SEC_FILING",
-    "ticker": "IONQ",
-    "form": "8-K",
-    "filed": "2024-02-28",
-    "score": 7
-  },
-  {
-    "type": "SEC_FILING",
-    "ticker": "IONQ",
-    "form": "10-Q",
-    "filed": "2023-11-09",
-    "score": 7
-  },
-  {
-    "type": "SEC_FILING",
-    "ticker": "IONQ",
-    "form": "8-K",
-    "filed": "2023-11-08",
-    "score": 7
-  },
-  {
-    "type": "SEC_FILING",
-    "ticker": "IONQ",
-    "form": "8-K",
-    "filed": "2023-10-05",
-    "score": 7
-  },
-  {
-    "type": "SEC_FILING",
-    "ticker": "IONQ",
-    "form": "8-K",
-    "filed": "2023-08-17",
-    "score": 7
-  },
-  {
-    "type": "SEC_FILING",
-    "ticker": "IONQ",
-    "form": "10-Q",
-    "filed": "2023-08-10",
-    "score": 7
-  },
-  {
-    "type": "SEC_FILING",
-    "ticker": "IONQ",
-    "form": "8-K",
-    "filed": "2023-08-10",
-    "score": 7
-  },
-  {
-    "type": "SEC_FILING",
-    "ticker": "IONQ",
-    "form": "8-K",
-    "filed": "2023-06-30",
-    "score": 7
-  },
-  {
-    "type": "SEC_FILING",
-    "ticker": "IONQ",
-    "form": "10-Q",
-    "filed": "2023-05-11",
-    "score": 7
-  },
-  {
-    "type": "SEC_FILING",
-    "ticker": "IONQ",
-    "form": "8-K",
-    "filed": "2023-05-11",
-    "score": 7
-  },
-  {
-    "type": "SEC_FILING",
-    "ticker": "IONQ",
-    "form": "10-K",
-    "filed": "2023-03-30",
-    "score": 7
-  },
-  {
-    "type": "SEC_FILING",
-    "ticker": "IONQ",
-    "form": "8-K",
-    "filed": "2023-03-30",
-    "score": 7
-  },
-  {
-    "type": "SEC_FILING",
-    "ticker": "IONQ",
-    "form": "8-K",
-    "filed": "2023-03-17",
-    "score": 7
-  },
-  {
-    "type": "SEC_FILING",
-    "ticker": "IONQ",
-    "form": "8-K",
-    "filed": "2023-03-06",
-    "score": 7
-  },
-  {
-    "type": "SEC_FILING",
-    "ticker": "IONQ",
-    "form": "8-K",
-    "filed": "2023-03-03",
-    "score": 7
-  },
-  {
-    "type": "SEC_FILING",
-    "ticker": "IONQ",
-    "form": "8-K",
-    "filed": "2022-12-09",
-    "score": 7
-  },
-  {
-    "type": "SEC_FILING",
-    "ticker": "IONQ",
-    "form": "10-Q",
-    "filed": "2022-11-14",
-    "score": 7
-  },
-  {
-    "type": "SEC_FILING",
-    "ticker": "IONQ",
-    "form": "8-K",
-    "filed": "2022-11-14",
-    "score": 7
-  },
-  {
-    "type": "SEC_FILING",
-    "ticker": "IONQ",
-    "form": "10-Q",
-    "filed": "2022-08-15",
-    "score": 7
-  },
-  {
-    "type": "SEC_FILING",
-    "ticker": "IONQ",
-    "form": "8-K",
-    "filed": "2022-08-15",
-    "score": 7
+    "type": "ARXIV",
+    "title": "Finite temperature dopant-induced spin reorganization explored via\n  tensor networks in the two-dimensional $t$-$J$ model",
+    "published": "2025-10-06T12:34:05Z",
+    "link": "http://arxiv.org/abs/2510.04756v2",
+    "score": 5,
+    "ts": "2025-10-06T12:34:05+00:00Z"
   },
   {
-    "type": "SEC_FILING",
-    "ticker": "IONQ",
-    "form": "8-K",
-    "filed": "2022-07-21",
-    "score": 7
-  },
-  {
-    "type": "SEC_FILING",
-    "ticker": "IONQ",
-    "form": "8-K",
-    "filed": "2022-05-26",
-    "score": 7
-  },
-  {
-    "type": "SEC_FILING",
-    "ticker": "IONQ",
-    "form": "10-Q",
-    "filed": "2022-05-16",
-    "score": 7
-  },
-  {
-    "type": "SEC_FILING",
-    "ticker": "IONQ",
-    "form": "8-K",
-    "filed": "2022-05-16",
-    "score": 7
-  },
-  {
-    "type": "SEC_FILING",
-    "ticker": "IONQ",
-    "form": "10-K",
-    "filed": "2022-03-28",
-    "score": 7
-  },
-  {
-    "type": "SEC_FILING",
-    "ticker": "IONQ",
-    "form": "8-K",
-    "filed": "2022-03-28",
-    "score": 7
-  },
-  {
-    "type": "SEC_FILING",
-    "ticker": "IONQ",
-    "form": "8-K",
-    "filed": "2021-12-17",
-    "score": 7
-  },
-  {
-    "type": "SEC_FILING",
-    "ticker": "IONQ",
-    "form": "10-Q",
-    "filed": "2021-11-15",
-    "score": 7
-  },
-  {
-    "type": "SEC_FILING",
-    "ticker": "IONQ",
-    "form": "8-K",
-    "filed": "2021-11-15",
-    "score": 7
-  },
-  {
-    "type": "SEC_FILING",
-    "ticker": "IONQ",
-    "form": "S-1",
-    "filed": "2021-10-04",
-    "score": 7
-  },
-  {
-    "type": "SEC_FILING",
-    "ticker": "IONQ",
-    "form": "8-K",
-    "filed": "2021-10-04",
-    "score": 7
-  },
-  {
-    "type": "SEC_FILING",
-    "ticker": "IONQ",
-    "form": "8-K",
-    "filed": "2021-10-04",
-    "score": 7
-  },
-  {
-    "type": "SEC_FILING",
-    "ticker": "IONQ",
-    "form": "10-Q",
-    "filed": "2021-08-16",
-    "score": 7
-  },
-  {
-    "type": "SEC_FILING",
-    "ticker": "IONQ",
-    "form": "10-Q",
-    "filed": "2021-06-04",
-    "score": 7
+    "type": "ARXIV",
+    "title": "Embedding-Aware Noise Modeling of Quantum Annealing",
+    "published": "2025-10-06T08:48:25Z",
+    "link": "http://arxiv.org/abs/2510.04594v2",
+    "score": 3,
+    "ts": "2025-10-06T08:48:25+00:00Z"
   },
   {
-    "type": "SEC_FILING",
-    "ticker": "IONQ",
-    "form": "8-K",
-    "filed": "2021-06-01",
-    "score": 7
+    "type": "NEWS",
+    "title": "Lake Street Initiates Buy Rating on Quantum Computing ( QUBT ) Stock",
+    "url": "https://finance.yahoo.com/news/lake-street-initiates-buy-rating-211601987.html",
+    "seen": "20251004T221500Z",
+    "score": 3,
+    "ts": "2025-10-04T22:15:00+00:00Z"
   },
   {
-    "type": "SEC_FILING",
-    "ticker": "IONQ",
-    "form": "8-K",
-    "filed": "2021-05-18",
-    "score": 7
+    "type": "NEWS",
+    "title": "Lake Street Initiates Buy Rating on Quantum Computing ( QUBT ) Stock",
+    "url": "https://finance.yahoo.com/news/lake-street-initiates-buy-rating-211601987.html",
+    "seen": "20251004T221500Z",
+    "score": 3,
+    "ts": "2025-10-04T22:15:00+00:00Z"
   },
   {
-    "type": "SEC_FILING",
-    "ticker": "IONQ",
-    "form": "10-K",
-    "filed": "2021-03-25",
-    "score": 7
+    "type": "ARXIV",
+    "title": "Accelerating Extended Benders Decomposition with Quantum-Classical\n  Hybrid Solver",
+    "published": "2025-10-04T03:21:23Z",
+    "link": "http://arxiv.org/abs/2510.03647v2",
+    "score": 5,
+    "ts": "2025-10-04T03:21:23+00:00Z"
   },
   {
-    "type": "SEC_FILING",
-    "ticker": "IONQ",
-    "form": "8-K",
-    "filed": "2021-03-08",
-    "score": 7
+    "type": "NEWS",
+    "title": "Rigetti Computing ( RGTI ) Surges to New High on New Million - Dollar Novera System Orders",
+    "url": "https://www.insidermonkey.com/blog/rigetti-computing-rgti-surges-to-new-high-on-new-million-dollar-novera-system-orders-1622641/",
+    "seen": "20251003T184500Z",
+    "score": 3,
+    "ts": "2025-10-03T18:45:00+00:00Z"
   },
   {
-    "type": "SEC_FILING",
-    "ticker": "IONQ",
-    "form": "8-K",
-    "filed": "2021-01-19",
-    "score": 7
+    "type": "NEWS",
+    "title": "Rigetti Computing ( RGTI ) Surges to New High on New Million - Dollar Novera System Orders",
+    "url": "https://www.insidermonkey.com/blog/rigetti-computing-rgti-surges-to-new-high-on-new-million-dollar-novera-system-orders-1622641/",
+    "seen": "20251003T184500Z",
+    "score": 3,
+    "ts": "2025-10-03T18:45:00+00:00Z"
   },
   {
-    "type": "SEC_FILING",
-    "ticker": "IONQ",
-    "form": "8-K",
-    "filed": "2020-12-31",
-    "score": 7
+    "type": "NEWS",
+    "title": "Next - Generation Chips Strategic Intelligence Report 2025 : ",
+    "url": "https://www.globenewswire.com/news-release/2025/10/03/3160854/28124/en/Next-Generation-Chips-Strategic-Intelligence-Report-2025-Lucrative-Opportunities-in-Sectors-Like-AI-Premium-Electronics-Automotive-Defense-Telecoms-and-Healthcare.html",
+    "seen": "20251003T103000Z",
+    "score": 3,
+    "ts": "2025-10-03T10:30:00+00:00Z"
   },
   {
     "type": "SEC_FILING",
-    "ticker": "IONQ",
-    "form": "10-Q",
-    "filed": "2020-12-18",
-    "score": 7
+    "ticker": "QUBT",
+    "form": "4",
+    "filed": "2025-10-03",
+    "score": 4,
+    "ts": "2025-10-03T00:00:00Z"
   },
   {
     "type": "SEC_FILING",
-    "ticker": "IONQ",
-    "form": "8-K",
-    "filed": "2020-11-23",
-    "score": 7
+    "ticker": "QUBT",
+    "form": "4",
+    "filed": "2025-10-03",
+    "score": 4,
+    "ts": "2025-10-03T00:00:00Z"
   },
   {
     "type": "SEC_FILING",
-    "ticker": "IONQ",
-    "form": "8-K",
-    "filed": "2020-11-17",
-    "score": 7
+    "ticker": "QUBT",
+    "form": "4",
+    "filed": "2025-10-03",
+    "score": 4,
+    "ts": "2025-10-03T00:00:00Z"
   },
   {
     "type": "SEC_FILING",
-    "ticker": "IONQ",
-    "form": "S-1",
-    "filed": "2020-10-16",
-    "score": 7
+    "ticker": "QUBT",
+    "form": "4",
+    "filed": "2025-10-03",
+    "score": 4,
+    "ts": "2025-10-03T00:00:00Z"
+  },
+  {
+    "type": "NEWS",
+    "title": "PsiQuantum elevates quantum computing with silicon photonics",
+    "url": "https://siliconangle.com/2025/10/02/psiquantums-worlds-first-fault-tolerant-quantum-computing-aifactoriesdatacenters/",
+    "seen": "20251002T233000Z",
+    "score": 3,
+    "ts": "2025-10-02T23:30:00+00:00Z"
+  },
+  {
+    "type": "ARXIV",
+    "title": "Folding lattice proteins confined on minimal grids using a\n  quantum-inspired encoding",
+    "published": "2025-10-02T10:58:31Z",
+    "link": "http://arxiv.org/abs/2510.01890v1",
+    "score": 3,
+    "ts": "2025-10-02T10:58:31+00:00Z"
+  },
+  {
+    "type": "NEWS",
+    "title": "PsiQuantum breaks ground on quantum computing park at former U . S . Steel South Works mill",
+    "url": "https://www.nwitimes.com/news/local/business/article_dccfc880-5b11-4db8-a399-a30f366f8fa6.html",
+    "seen": "20251002T013000Z",
+    "score": 3,
+    "ts": "2025-10-02T01:30:00+00:00Z"
+  },
+  {
+    "type": "NEWS",
+    "title": "PsiQuantum breaks ground on Chicago quantum site",
+    "url": "https://www.marketscreener.com/news/psiquantum-breaks-ground-on-chicago-quantum-site-after-1-billion-funding-ce7d5bd8df8bf724",
+    "seen": "20251001T010000Z",
+    "score": 3,
+    "ts": "2025-10-01T01:00:00+00:00Z"
   },
   {
     "type": "SEC_FILING",
     "ticker": "QUBT",
     "form": "8-K",
     "filed": "2025-10-01",
-    "score": 7
+    "score": 6,
+    "ts": "2025-10-01T00:00:00Z"
+  },
+  {
+    "type": "NEWS",
+    "title": "QuEra Adds BCG X AI Science Institute to Quantum Alliance",
+    "url": "https://www.hpcwire.com/off-the-wire/quera-adds-bcg-x-ai-science-institute-to-quantum-alliance/",
+    "seen": "20250930T154500Z",
+    "score": 3,
+    "ts": "2025-09-30T15:45:00+00:00Z"
+  },
+  {
+    "type": "ARXIV",
+    "title": "Strong enhancement of d-wave superconductivity in an extended\n  checkerboard Hubbard ladder",
+    "published": "2025-09-29T08:03:16Z",
+    "link": "http://arxiv.org/abs/2509.24415v1",
+    "score": 5,
+    "ts": "2025-09-29T08:03:16+00:00Z"
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "IONQ",
+    "form": "8-K",
+    "filed": "2025-09-29",
+    "score": 6,
+    "ts": "2025-09-29T00:00:00Z"
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "IONQ",
+    "form": "4",
+    "filed": "2025-09-29",
+    "score": 4,
+    "ts": "2025-09-29T00:00:00Z"
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "IONQ",
+    "form": "3",
+    "filed": "2025-09-29",
+    "score": 4,
+    "ts": "2025-09-29T00:00:00Z"
+  },
+  {
+    "type": "ARXIV",
+    "title": "Observation of a resonance-like structure near the $π^+π^-$ mass\n  threshold in $ψ(3686) \\rightarrow π^{+}π^{-}J/ψ$",
+    "published": "2025-09-28T09:13:57Z",
+    "link": "http://arxiv.org/abs/2509.23761v1",
+    "score": 5,
+    "ts": "2025-09-28T09:13:57+00:00Z"
+  },
+  {
+    "type": "ARXIV",
+    "title": "Noncollinear Magnetic Multipoles in Collinear Altermagnets",
+    "published": "2025-09-27T04:57:50Z",
+    "link": "http://arxiv.org/abs/2509.23117v1",
+    "score": 3,
+    "ts": "2025-09-27T04:57:50+00:00Z"
+  },
+  {
+    "type": "ARXIV",
+    "title": "Solving Currency Arbitrage Problems using D-Wave Advantage2 Quantum\n  Annealer",
+    "published": "2025-09-26T17:07:02Z",
+    "link": "http://arxiv.org/abs/2509.22591v1",
+    "score": 3,
+    "ts": "2025-09-26T17:07:02+00:00Z"
+  },
+  {
+    "type": "ARXIV",
+    "title": "Quantum algorithms for solving a drift-diffusion equation: analysing\n  circuit depths",
+    "published": "2025-09-25T20:02:35Z",
+    "link": "http://arxiv.org/abs/2509.21509v1",
+    "score": 5,
+    "ts": "2025-09-25T20:02:35+00:00Z"
+  },
+  {
+    "type": "NEWS",
+    "title": "桃園企業聯合會攜手世外桃源文教基金會做公益 張善政肯定展現企業社會責任",
+    "url": "https://n.yam.com/Article/20250925788201",
+    "seen": "20250925T140000Z",
+    "score": 3,
+    "ts": "2025-09-25T14:00:00+00:00Z"
+  },
+  {
+    "type": "SEC_FILING",
+    "ticker": "IONQ",
+    "form": "4",
+    "filed": "2025-09-25",
+    "score": 4,
+    "ts": "2025-09-25T00:00:00Z"
+  },
+  {
+    "type": "NEWS",
+    "title": "IQT Research Announces New Report Identifying Who Leads the Quantum Computing Industry : Chooses IBM , Quantinuum , IonQ and Rigetti as Top Names",
+    "url": "https://www.prnewswire.com/news-releases/iqt-research-announces-new-report-identifying-who-leads-the-quantum-computing-industry-chooses-ibm-quantinuum-ionq-and-rigetti-as-top-names-302565852.html",
+    "seen": "20250924T130000Z",
+    "score": 3,
+    "ts": "2025-09-24T13:00:00+00:00Z"
+  },
+  {
+    "type": "NEWS",
+    "title": "A Once - in - a - Decade Opportunity : 10 Billion Reasons to Pay Attention to This Monster Quantum Computing Company ( Hint : Not IonQ ) ",
+    "url": "https://www.fool.com/investing/2025/09/24/a-once-in-a-decade-opportunity-10-billion-reasons/",
+    "seen": "20250924T124500Z",
+    "score": 3,
+    "ts": "2025-09-24T12:45:00+00:00Z"
+  },
+  {
+    "type": "NEWS",
+    "title": "Why NVIDIA Is Buying Into Quantum Computing",
+    "url": "https://time.com/7319603/nvidia-ai-quantum-computing/",
+    "seen": "20250923T151500Z",
+    "score": 3,
+    "ts": "2025-09-23T15:15:00+00:00Z"
+  },
+  {
+    "type": "NEWS",
+    "title": "Why NVIDIA Is Buying Into Quantum Computing",
+    "url": "https://time.com/7319603/nvidia-ai-quantum-computing/",
+    "seen": "20250923T151500Z",
+    "score": 3,
+    "ts": "2025-09-23T15:15:00+00:00Z"
+  },
+  {
+    "type": "NEWS",
+    "title": "New , improved 3 , 000 - qubit neutral atom array system reloads atoms continuously for more than two hours",
+    "url": "https://phys.org/news/2025-09-qubit-neutral-atom-array-reloads.html",
+    "seen": "20250922T164500Z",
+    "score": 3,
+    "ts": "2025-09-22T16:45:00+00:00Z"
   },
   {
     "type": "SEC_FILING",
     "ticker": "QUBT",
     "form": "8-K",
     "filed": "2025-09-18",
-    "score": 7
+    "score": 6,
+    "ts": "2025-09-18T00:00:00Z"
   },
   {
     "type": "SEC_FILING",
-    "ticker": "QUBT",
-    "form": "8-K",
-    "filed": "2025-08-07",
-    "score": 7
-  },
-  {
-    "type": "SEC_FILING",
-    "ticker": "QUBT",
-    "form": "10-Q",
-    "filed": "2025-08-07",
-    "score": 7
-  },
-  {
-    "type": "SEC_FILING",
-    "ticker": "QUBT",
-    "form": "8-K",
-    "filed": "2025-08-06",
-    "score": 7
-  },
-  {
-    "type": "SEC_FILING",
-    "ticker": "QUBT",
-    "form": "8-K",
-    "filed": "2025-08-06",
-    "score": 7
-  },
-  {
-    "type": "SEC_FILING",
-    "ticker": "QUBT",
-    "form": "8-K",
-    "filed": "2025-08-06",
-    "score": 7
-  },
-  {
-    "type": "SEC_FILING",
-    "ticker": "QUBT",
-    "form": "8-K",
-    "filed": "2025-07-16",
-    "score": 7
-  },
-  {
-    "type": "SEC_FILING",
-    "ticker": "QUBT",
-    "form": "8-K",
-    "filed": "2025-07-01",
-    "score": 7
-  },
-  {
-    "type": "SEC_FILING",
-    "ticker": "QUBT",
-    "form": "8-K",
-    "filed": "2025-06-30",
-    "score": 7
+    "ticker": "IONQ",
+    "form": "8-K/A",
+    "filed": "2025-09-18",
+    "score": 4,
+    "ts": "2025-09-18T00:00:00Z"
   },
   {
-    "type": "SEC_FILING",
-    "ticker": "QUBT",
-    "form": "8-K",
-    "filed": "2025-06-23",
-    "score": 7
+    "type": "ARXIV",
+    "title": "Scaling Hybrid Quantum-HPC Applications with the Quantum Framework",
+    "published": "2025-09-17T22:58:43Z",
+    "link": "http://arxiv.org/abs/2509.14470v1",
+    "score": 5,
+    "ts": "2025-09-17T22:58:43+00:00Z"
   },
   {
     "type": "SEC_FILING",
-    "ticker": "QUBT",
+    "ticker": "IONQ",
     "form": "8-K",
-    "filed": "2025-06-18",
-    "score": 7
+    "filed": "2025-09-17",
+    "score": 6,
+    "ts": "2025-09-17T00:00:00Z"
   },
   {
-    "type": "SEC_FILING",
-    "ticker": "QUBT",
-    "form": "8-K",
-    "filed": "2025-06-13",
-    "score": 7
+    "type": "NEWS",
+    "title": "The race to quantum computing supremacy runs through Boston",
+    "url": "https://www.masslive.com/news/2025/09/the-race-to-quantum-computing-supremacy-runs-through-boston.html",
+    "seen": "20250916T101500Z",
+    "score": 3,
+    "ts": "2025-09-16T10:15:00+00:00Z"
   },
   {
-    "type": "SEC_FILING",
-    "ticker": "QUBT",
-    "form": "8-K",
-    "filed": "2025-06-02",
-    "score": 7
+    "type": "NEWS",
+    "title": "PsiQuantum plans to build world first large scale fault tolerant million qubit quantum computers",
+    "url": "https://www.techradar.com/pro/psiquantum-plans-to-build-worlds-first-large-scale-fault-tolerant-million-qubit-quantum-computers-for-solving-some-of-the-worlds-most-complex-scientific-problems",
+    "seen": "20250916T020000Z",
+    "score": 3,
+    "ts": "2025-09-16T02:00:00+00:00Z"
   },
   {
-    "type": "SEC_FILING",
-    "ticker": "QUBT",
-    "form": "8-K",
-    "filed": "2025-05-27",
-    "score": 7
+    "type": "NEWS",
+    "title": "PsiQuantum Raises $1B at $7B Valuation for Million - Qubit Quantum Computers",
+    "url": "https://www.webpronews.com/psiquantum-raises-1b-at-7b-valuation-for-million-qubit-quantum-computers/",
+    "seen": "20250916T013000Z",
+    "score": 3,
+    "ts": "2025-09-16T01:30:00+00:00Z"
   },
   {
     "type": "SEC_FILING",
-    "ticker": "QUBT",
-    "form": "10-Q",
-    "filed": "2025-05-08",
-    "score": 7
+    "ticker": "IONQ",
+    "form": "4",
+    "filed": "2025-09-16",
+    "score": 4,
+    "ts": "2025-09-16T00:00:00Z"
   },
   {
-    "type": "SEC_FILING",
-    "ticker": "QUBT",
-    "form": "8-K",
-    "filed": "2025-05-08",
-    "score": 7
+    "type": "NEWS",
+    "title": "Quantum Stock Tracker : IonQ Price Targets , Rigetti Climbs - IonQ ( NYSE : IONQ ) ",
+    "url": "https://www.benzinga.com/markets/tech/25/09/47678234/quantum-stock-tracker-ionqs-higher-price-targets-rigetti-climbs-30-nvidias-new-quantum-investments",
+    "seen": "20250915T201500Z",
+    "score": 3,
+    "ts": "2025-09-15T20:15:00+00:00Z"
   },
   {
-    "type": "SEC_FILING",
-    "ticker": "QUBT",
-    "form": "8-K",
-    "filed": "2025-05-07",
-    "score": 7
+    "type": "NEWS",
+    "title": "American Stock Leaps After Signing Agreement With India CDAC For High - Performance Quantum Computing",
+    "url": "https://www.freepressjournal.in/topnews/american-stock-leaps-after-signing-agreement-with-indias-cdac-for-high-performance-quantum-computing",
+    "seen": "20250913T180000Z",
+    "score": 3,
+    "ts": "2025-09-13T18:00:00+00:00Z"
   },
   {
-    "type": "SEC_FILING",
-    "ticker": "QUBT",
-    "form": "8-K",
-    "filed": "2025-05-07",
-    "score": 7
+    "type": "NEWS",
+    "title": "American Stock Leaps After Signing Agreement With India CDAC For High - Performance Quantum Computing",
+    "url": "https://www.freepressjournal.in/topnews/american-stock-leaps-after-signing-agreement-with-indias-cdac-for-high-performance-quantum-computing",
+    "seen": "20250913T180000Z",
+    "score": 3,
+    "ts": "2025-09-13T18:00:00+00:00Z"
   },
   {
-    "type": "SEC_FILING",
-    "ticker": "QUBT",
-    "form": "8-K",
-    "filed": "2025-04-16",
-    "score": 7
+    "type": "NEWS",
+    "title": "IonQ Skyrocketed Today -- Is the Quantum Computing Stock a Buy Right Now ? ",
+    "url": "https://www.fool.com/investing/2025/09/12/ionq-skyrocketed-today-is-the-quantum-computing-st/?source=iedfolrf0000001",
+    "seen": "20250913T001500Z",
+    "score": 3,
+    "ts": "2025-09-13T00:15:00+00:00Z"
   },
   {
-    "type": "SEC_FILING",
-    "ticker": "QUBT",
-    "form": "8-K",
-    "filed": "2025-04-04",
-    "score": 7
+    "type": "NEWS",
+    "title": "IonQ Skyrocketed Today -- Is the Quantum Computing Stock a Buy Right Now ? ",
+    "url": "https://www.fool.com/investing/2025/09/12/ionq-skyrocketed-today-is-the-quantum-computing-st/?source=iedfolrf0000001",
+    "seen": "20250913T001500Z",
+    "score": 3,
+    "ts": "2025-09-13T00:15:00+00:00Z"
   },
   {
-    "type": "SEC_FILING",
-    "ticker": "QUBT",
-    "form": "8-K",
-    "filed": "2025-04-01",
-    "score": 7
+    "type": "NEWS",
+    "title": "This Artificial Intelligence ( AI ) Stock Has a First - Mover Advantage in Quantum Integration",
+    "url": "https://finance.yahoo.com/news/artificial-intelligence-ai-stock-first-094800815.html",
+    "seen": "20250912T200000Z",
+    "score": 3,
+    "ts": "2025-09-12T20:00:00+00:00Z"
   },
   {
-    "type": "SEC_FILING",
-    "ticker": "QUBT",
-    "form": "8-K",
-    "filed": "2025-03-28",
-    "score": 7
+    "type": "NEWS",
+    "title": "This Artificial Intelligence ( AI ) Stock Has a First - Mover Advantage in Quantum Integration",
+    "url": "https://finance.yahoo.com/news/artificial-intelligence-ai-stock-first-094800815.html",
+    "seen": "20250912T200000Z",
+    "score": 3,
+    "ts": "2025-09-12T20:00:00+00:00Z"
   },
   {
-    "type": "SEC_FILING",
-    "ticker": "QUBT",
-    "form": "8-K",
-    "filed": "2025-03-20",
-    "score": 7
+    "type": "NEWS",
+    "title": "Honeywell International Inc . ( HON ) Announces $600 Million Equity Capital Raise for Its Quantum Subsidiary Quantinuum",
+    "url": "https://www.insidermonkey.com/blog/honeywell-international-inc-hon-announces-600-million-equity-capital-raise-for-its-quantum-subsidiary-quantinuum-1607629/",
+    "seen": "20250912T153000Z",
+    "score": 3,
+    "ts": "2025-09-12T15:30:00+00:00Z"
   },
   {
-    "type": "SEC_FILING",
-    "ticker": "QUBT",
-    "form": "8-K",
-    "filed": "2025-03-13",
-    "score": 7
+    "type": "NEWS",
+    "title": "Atom - thin crystals provide new way to power the future of computer memory",
+    "url": "https://phys.org/news/2025-09-atom-thin-crystals-power-future.html",
+    "seen": "20250912T151500Z",
+    "score": 3,
+    "ts": "2025-09-12T15:15:00+00:00Z"
   },
   {
-    "type": "SEC_FILING",
-    "ticker": "QUBT",
-    "form": "8-K",
-    "filed": "2025-03-12",
-    "score": 7
+    "type": "NEWS",
+    "title": "10x Upside For IONQ Stock ? ",
+    "url": "https://www.forbes.com/sites/greatspeculations/2025/09/12/10x-upside-for-ionq-stock/",
+    "seen": "20250912T120000Z",
+    "score": 3,
+    "ts": "2025-09-12T12:00:00+00:00Z"
   },
   {
-    "type": "SEC_FILING",
-    "ticker": "QUBT",
-    "form": "8-K",
-    "filed": "2025-03-03",
-    "score": 7
+    "type": "NEWS",
+    "title": "10x Upside For IONQ Stock ? ",
+    "url": "https://www.forbes.com/sites/greatspeculations/2025/09/12/10x-upside-for-ionq-stock/",
+    "seen": "20250912T120000Z",
+    "score": 3,
+    "ts": "2025-09-12T12:00:00+00:00Z"
   },
   {
     "type": "SEC_FILING",
-    "ticker": "QUBT",
-    "form": "10-K",
-    "filed": "2025-02-27",
-    "score": 7
+    "ticker": "IONQ",
+    "form": "4",
+    "filed": "2025-09-12",
+    "score": 4,
+    "ts": "2025-09-12T00:00:00Z"
   },
   {
     "type": "SEC_FILING",
-    "ticker": "QUBT",
-    "form": "8-K",
-    "filed": "2025-02-27",
-    "score": 7
+    "ticker": "IONQ",
+    "form": "4",
+    "filed": "2025-09-12",
+    "score": 4,
+    "ts": "2025-09-12T00:00:00Z"
   },
   {
     "type": "SEC_FILING",
-    "ticker": "QUBT",
-    "form": "8-K",
-    "filed": "2025-02-27",
-    "score": 7
+    "ticker": "IONQ",
+    "form": "4",
+    "filed": "2025-09-12",
+    "score": 4,
+    "ts": "2025-09-12T00:00:00Z"
   },
   {
     "type": "SEC_FILING",
-    "ticker": "QUBT",
-    "form": "8-K",
-    "filed": "2025-02-26",
-    "score": 7
+    "ticker": "IONQ",
+    "form": "144",
+    "filed": "2025-09-12",
+    "score": 4,
+    "ts": "2025-09-12T00:00:00Z"
   },
   {
     "type": "SEC_FILING",
-    "ticker": "QUBT",
-    "form": "8-K",
-    "filed": "2025-02-07",
-    "score": 7
+    "ticker": "IONQ",
+    "form": "144",
+    "filed": "2025-09-12",
+    "score": 4,
+    "ts": "2025-09-12T00:00:00Z"
   },
   {
-    "type": "SEC_FILING",
-    "ticker": "QUBT",
-    "form": "8-K",
-    "filed": "2025-01-24",
-    "score": 7
+    "type": "NEWS",
+    "title": "Why Is IonQ ( IONQ ) Stock Rocketing Higher Today",
+    "url": "https://markets.financialcontent.com/stocks/article/stockstory-2025-9-11-why-is-ionq-ionq-stock-rocketing-higher-today",
+    "seen": "20250911T190000Z",
+    "score": 3,
+    "ts": "2025-09-11T19:00:00+00:00Z"
   },
   {
-    "type": "SEC_FILING",
-    "ticker": "QUBT",
-    "form": "8-K",
-    "filed": "2025-01-08",
-    "score": 7
+    "type": "NEWS",
+    "title": "Why Is IonQ ( IONQ ) Stock Rocketing Higher Today",
+    "url": "https://markets.financialcontent.com/stocks/article/stockstory-2025-9-11-why-is-ionq-ionq-stock-rocketing-higher-today",
+    "seen": "20250911T190000Z",
+    "score": 3,
+    "ts": "2025-09-11T19:00:00+00:00Z"
   },
   {
-    "type": "SEC_FILING",
-    "ticker": "QUBT",
-    "form": "8-K",
-    "filed": "2025-01-02",
-    "score": 7
+    "type": "NEWS",
+    "title": "PsiQuantum Raises 1B To Build Million - Qubit Scale Fault - Tolerant Quantum Computers",
+    "url": "https://www.photonicsonline.com/doc/psiquantum-raises-build-million-qubit-scale-fault-tolerant-quantum-computers-0001",
+    "seen": "20250911T134500Z",
+    "score": 3,
+    "ts": "2025-09-11T13:45:00+00:00Z"
   },
   {
     "type": "SEC_FILING",
-    "ticker": "QUBT",
-    "form": "8-K",
-    "filed": "2024-12-19",
-    "score": 7
+    "ticker": "IONQ",
+    "form": "144",
+    "filed": "2025-09-11",
+    "score": 4,
+    "ts": "2025-09-11T00:00:00Z"
   },
   {
     "type": "SEC_FILING",
-    "ticker": "QUBT",
-    "form": "8-K",
-    "filed": "2024-12-12",
-    "score": 7
+    "ticker": "IONQ",
+    "form": "144",
+    "filed": "2025-09-11",
+    "score": 4,
+    "ts": "2025-09-11T00:00:00Z"
   },
   {
     "type": "SEC_FILING",
-    "ticker": "QUBT",
-    "form": "8-K",
-    "filed": "2024-11-22",
-    "score": 7
+    "ticker": "IONQ",
+    "form": "144",
+    "filed": "2025-09-11",
+    "score": 4,
+    "ts": "2025-09-11T00:00:00Z"
   },
   {
-    "type": "SEC_FILING",
-    "ticker": "QUBT",
-    "form": "8-K",
-    "filed": "2024-11-07",
-    "score": 7
+    "type": "NEWS",
+    "title": "Quantum computing startup PsiQuantum raises $1B , aiming to build 1M - qubit - scale machine",
+    "url": "https://siliconangle.com/2025/09/10/quantum-computing-startup-psiquantum-raises-1b-aiming-build-1m-qubit-scale-machine/",
+    "seen": "20250910T204500Z",
+    "score": 3,
+    "ts": "2025-09-10T20:45:00+00:00Z"
   },
   {
-    "type": "SEC_FILING",
-    "ticker": "QUBT",
-    "form": "10-Q",
-    "filed": "2024-11-06",
-    "score": 7
+    "type": "NEWS",
+    "title": "Nvidia buys in to Australian government - backed quantum computing contender PsiQuantum",
+    "url": "https://www.afr.com/technology/nvidia-becomes-investor-in-psiquantum-alongside-australian-government-20250910-p5mttt",
+    "seen": "20250910T124500Z",
+    "score": 3,
+    "ts": "2025-09-10T12:45:00+00:00Z"
   },
   {
-    "type": "SEC_FILING",
-    "ticker": "QUBT",
-    "form": "8-K",
-    "filed": "2024-11-06",
-    "score": 7
+    "type": "NEWS",
+    "title": "PsiQuantum valued at US$7 billion teams up with NVIDIA",
+    "url": "https://www.bnnbloomberg.ca/business/2025/09/10/psiquantum-valued-at-us7-billion-in-latest-funding-round-teams-up-with-nvidia/",
+    "seen": "20250910T124500Z",
+    "score": 3,
+    "ts": "2025-09-10T12:45:00+00:00Z"
   },
   {
     "type": "SEC_FILING",
-    "ticker": "QUBT",
-    "form": "8-K",
-    "filed": "2024-11-06",
-    "score": 7
+    "ticker": "IONQ",
+    "form": "4",
+    "filed": "2025-09-08",
+    "score": 4,
+    "ts": "2025-09-08T00:00:00Z"
   },
   {
-    "type": "SEC_FILING",
-    "ticker": "QUBT",
-    "form": "8-K",
-    "filed": "2024-10-15",
-    "score": 7
+    "type": "NEWS",
+    "title": "Up 479 %, Should You Buy IonQ Right Now ? ",
+    "url": "https://www.fool.com/investing/2025/09/07/up-479-should-you-buy-ionq-right-now/?source=iedfolrf0000001",
+    "seen": "20250907T130000Z",
+    "score": 3,
+    "ts": "2025-09-07T13:00:00+00:00Z"
   },
   {
-    "type": "SEC_FILING",
-    "ticker": "QUBT",
-    "form": "8-K",
-    "filed": "2024-10-09",
-    "score": 7
+    "type": "NEWS",
+    "title": "Up 479 %, Should You Buy IonQ Right Now ? ",
+    "url": "https://www.fool.com/investing/2025/09/07/up-479-should-you-buy-ionq-right-now/?source=iedfolrf0000001",
+    "seen": "20250907T130000Z",
+    "score": 3,
+    "ts": "2025-09-07T13:00:00+00:00Z"
   },
   {
-    "type": "SEC_FILING",
-    "ticker": "QUBT",
-    "form": "8-K",
-    "filed": "2024-10-01",
-    "score": 7
+    "type": "NEWS",
+    "title": "5 Best Quantum Computing Stocks to Buy in September",
+    "url": "https://www.fool.com/investing/2025/09/05/5-best-quantum-computing-stocks-to-buy-in-septembe/?source=iedfolrf0000001",
+    "seen": "20250905T114500Z",
+    "score": 3,
+    "ts": "2025-09-05T11:45:00+00:00Z"
   },
   {
     "type": "SEC_FILING",
-    "ticker": "QUBT",
-    "form": "8-K",
-    "filed": "2024-09-19",
-    "score": 7
+    "ticker": "IONQ",
+    "form": "4",
+    "filed": "2025-09-05",
+    "score": 4,
+    "ts": "2025-09-05T00:00:00Z"
   },
   {
-    "type": "SEC_FILING",
-    "ticker": "QUBT",
-    "form": "8-K",
-    "filed": "2024-09-04",
-    "score": 7
+    "type": "NEWS",
+    "title": "Honeywell Quantinuum inches closer to a pivotal step for investors",
+    "url": "https://www.cnbc.com/2025/09/04/honeywells-quantinuum-inches-closer-to-a-pivotal-step-for-investors.html",
+    "seen": "20250904T201500Z",
+    "score": 3,
+    "ts": "2025-09-04T20:15:00+00:00Z"
   },
   {
-    "type": "SEC_FILING",
-    "ticker": "QUBT",
-    "form": "8-K",
-    "filed": "2024-08-07",
-    "score": 7
+    "type": "NEWS",
+    "title": "Nvidia venture arm invests in Honeywell Quantinuum – The Mercury News",
+    "url": "https://www.mercurynews.com/2025/09/04/nvidias-venture-arm-invests-in-honeywells-quantinuum/",
+    "seen": "20250904T181500Z",
+    "score": 3,
+    "ts": "2025-09-04T18:15:00+00:00Z"
   },
   {
-    "type": "SEC_FILING",
-    "ticker": "QUBT",
-    "form": "10-Q",
-    "filed": "2024-08-07",
-    "score": 7
+    "type": "NEWS",
+    "title": "Quantinuum Raises $600 Million in Latest Funding Round for $10 Billion Valuation",
+    "url": "https://www.marketscreener.com/news/quantinuum-raises-600-million-in-latest-funding-round-for-10-billion-valuation-ce7d59d8da88f222",
+    "seen": "20250904T140000Z",
+    "score": 4,
+    "ts": "2025-09-04T14:00:00+00:00Z"
   },
   {
-    "type": "SEC_FILING",
-    "ticker": "QUBT",
-    "form": "8-K",
-    "filed": "2024-08-06",
-    "score": 7
+    "type": "NEWS",
+    "title": "Nvidia Investment In Honeywell Quantinuum Sends Quantum Computing Stocks Up",
+    "url": "https://www.investors.com/news/technology/nvidia-investment-honeywell-quantinuum-sends-quantum-computing-stocks-up/",
+    "seen": "20250904T140000Z",
+    "score": 3,
+    "ts": "2025-09-04T14:00:00+00:00Z"
   },
   {
-    "type": "SEC_FILING",
-    "ticker": "QUBT",
-    "form": "8-K",
-    "filed": "2024-08-06",
-    "score": 7
+    "type": "NEWS",
+    "title": "Nvidia Investment In Honeywell Quantinuum Sends Quantum Computing Stocks Up",
+    "url": "https://www.investors.com/news/technology/nvidia-investment-honeywell-quantinuum-sends-quantum-computing-stocks-up/",
+    "seen": "20250904T140000Z",
+    "score": 3,
+    "ts": "2025-09-04T14:00:00+00:00Z"
   },
   {
-    "type": "SEC_FILING",
-    "ticker": "QUBT",
-    "form": "8-K",
-    "filed": "2024-07-15",
-    "score": 7
+    "type": "NEWS",
+    "title": "Honeywell Quantinuum raises funds from Nvidia , others at $10 billion valuation",
+    "url": "https://www.marketscreener.com/news/honeywell-s-quantinuum-raises-funds-from-nvidia-others-at-10-billion-valuation-ce7d59d8d88df522",
+    "seen": "20250904T130000Z",
+    "score": 3,
+    "ts": "2025-09-04T13:00:00+00:00Z"
   },
   {
-    "type": "SEC_FILING",
-    "ticker": "QUBT",
-    "form": "8-K",
-    "filed": "2024-07-09",
-    "score": 7
+    "type": "NEWS",
+    "title": "Nvidia venture capital arm investing in Honeywell Quantinuum , Bloomberg News reports",
+    "url": "https://www.thestar.com.my/tech/tech-news/2025/09/04/nvidia039s-venture-capital-arm-investing-in-honeywell039s-quantinuum-bloomberg-news-reports",
+    "seen": "20250904T123000Z",
+    "score": 3,
+    "ts": "2025-09-04T12:30:00+00:00Z"
   },
   {
-    "type": "SEC_FILING",
-    "ticker": "QUBT",
-    "form": "8-K",
-    "filed": "2024-07-01",
-    "score": 7
+    "type": "NEWS",
+    "title": "7 Classic Falcom Games Will Return on Modern Consoles",
+    "url": "https://www.siliconera.com/7-classic-falcom-games-will-return-on-modern-consoles/",
+    "seen": "20250904T050000Z",
+    "score": 3,
+    "ts": "2025-09-04T05:00:00+00:00Z"
   },
   {
     "type": "SEC_FILING",
-    "ticker": "QUBT",
+    "ticker": "IONQ",
     "form": "8-K",
-    "filed": "2024-06-27",
-    "score": 7
+    "filed": "2025-09-04",
+    "score": 6,
+    "ts": "2025-09-04T00:00:00Z"
   },
   {
-    "type": "SEC_FILING",
-    "ticker": "QUBT",
-    "form": "8-K",
-    "filed": "2024-06-20",
-    "score": 7
+    "type": "NEWS",
+    "title": " 『 イース 』『 ドラゴンスレイヤー英雄伝説 』『 風の伝説ザナドゥ 』 の現行機移植が決定 。 発売は2026年度～2027年度を目標",
+    "url": "https://www.famitsu.com/article/202509/51389",
+    "seen": "20250903T084500Z",
+    "score": 3,
+    "ts": "2025-09-03T08:45:00+00:00Z"
   },
   {
     "type": "SEC_FILING",
-    "ticker": "QUBT",
-    "form": "8-K",
-    "filed": "2024-06-03",
-    "score": 7
+    "ticker": "IONQ",
+    "form": "144",
+    "filed": "2025-09-03",
+    "score": 4,
+    "ts": "2025-09-03T00:00:00Z"
   },
   {
-    "type": "SEC_FILING",
-    "ticker": "QUBT",
-    "form": "8-K",
-    "filed": "2024-05-29",
-    "score": 7
+    "type": "NEWS",
+    "title": "Smart Money Is Betting Big In RGTI Options - Rigetti Computing ( NASDAQ : RGTI ) ",
+    "url": "https://www.benzinga.com/insights/options/25/09/47459830/smart-money-is-betting-big-in-rgti-options",
+    "seen": "20250902T203000Z",
+    "score": 3,
+    "ts": "2025-09-02T20:30:00+00:00Z"
   },
   {
-    "type": "SEC_FILING",
-    "ticker": "QUBT",
-    "form": "8-K",
-    "filed": "2024-05-08",
-    "score": 7
+    "type": "NEWS",
+    "title": "Smart Money Is Betting Big In RGTI Options - Rigetti Computing ( NASDAQ : RGTI ) ",
+    "url": "https://www.benzinga.com/insights/options/25/09/47459830/smart-money-is-betting-big-in-rgti-options",
+    "seen": "20250902T203000Z",
+    "score": 3,
+    "ts": "2025-09-02T20:30:00+00:00Z"
   },
   {
-    "type": "SEC_FILING",
-    "ticker": "QUBT",
-    "form": "10-Q",
-    "filed": "2024-05-08",
-    "score": 7
+    "type": "NEWS",
+    "title": "Meet Quantum Computing Potential Monster Stocks of the Next Decade",
+    "url": "https://www.fool.com/investing/2025/09/02/meet-quantum-computings-monster-stocks-of-the-next/?source=iedfolrf0000001",
+    "seen": "20250902T094500Z",
+    "score": 3,
+    "ts": "2025-09-02T09:45:00+00:00Z"
   },
   {
-    "type": "SEC_FILING",
-    "ticker": "QUBT",
-    "form": "8-K",
-    "filed": "2024-05-07",
-    "score": 7
+    "type": "ARXIV",
+    "title": "Quantum Causality: Resolving Simpson's Paradox with\n  $\\mathcal{DO}$-Calculus",
+    "published": "2025-08-31T08:33:01Z",
+    "link": "http://arxiv.org/abs/2509.00744v1",
+    "score": 3,
+    "ts": "2025-08-31T08:33:01+00:00Z"
   },
   {
-    "type": "SEC_FILING",
-    "ticker": "QUBT",
-    "form": "8-K",
-    "filed": "2024-05-07",
-    "score": 7
+    "type": "NEWS",
+    "title": "Is Rigetti Computing Stock a Buy Now ? ",
+    "url": "https://finance.yahoo.com/news/rigetti-computing-stock-buy-now-150300200.html",
+    "seen": "20250830T160000Z",
+    "score": 3,
+    "ts": "2025-08-30T16:00:00+00:00Z"
   },
   {
-    "type": "SEC_FILING",
-    "ticker": "QUBT",
-    "form": "8-K",
-    "filed": "2024-04-23",
-    "score": 7
+    "type": "NEWS",
+    "title": "Is Rigetti Computing Stock a Buy Now ? ",
+    "url": "https://finance.yahoo.com/news/rigetti-computing-stock-buy-now-150300200.html",
+    "seen": "20250830T160000Z",
+    "score": 3,
+    "ts": "2025-08-30T16:00:00+00:00Z"
   },
   {
-    "type": "SEC_FILING",
-    "ticker": "QUBT",
-    "form": "8-K",
-    "filed": "2024-04-17",
-    "score": 7
+    "type": "NEWS",
+    "title": "Rigetti Computing , Inc . ( RGTI ) Collaborates With Montana State University , launching QCORE ; Cantor Fitzgerald Raises PT to $18",
+    "url": "https://finance.yahoo.com/news/rigetti-computing-inc-rgti-collaborates-093126585.html",
+    "seen": "20250830T111500Z",
+    "score": 3,
+    "ts": "2025-08-30T11:15:00+00:00Z"
   },
   {
-    "type": "SEC_FILING",
-    "ticker": "QUBT",
-    "form": "8-K",
-    "filed": "2024-04-12",
-    "score": 7
+    "type": "NEWS",
+    "title": "Rigetti Computing , Inc . ( RGTI ) Collaborates With Montana State University , launching QCORE ; Cantor Fitzgerald Raises PT to $18",
+    "url": "https://finance.yahoo.com/news/rigetti-computing-inc-rgti-collaborates-093126585.html",
+    "seen": "20250830T111500Z",
+    "score": 3,
+    "ts": "2025-08-30T11:15:00+00:00Z"
   },
   {
-    "type": "SEC_FILING",
-    "ticker": "QUBT",
-    "form": "8-K",
-    "filed": "2024-04-10",
-    "score": 7
+    "type": "NEWS",
+    "title": "Why Rigetti Computing Stock Is Skyrocketing Today",
+    "url": "https://www.fool.com/investing/2025/08/28/why-rigetti-computing-stock-is-skyrocketing-today/?source=iedfolrf0000001",
+    "seen": "20250828T224500Z",
+    "score": 3,
+    "ts": "2025-08-28T22:45:00+00:00Z"
   },
   {
-    "type": "SEC_FILING",
-    "ticker": "QUBT",
-    "form": "8-K",
-    "filed": "2024-04-08",
-    "score": 7
+    "type": "NEWS",
+    "title": "Why Rigetti Computing Stock Is Skyrocketing Today",
+    "url": "https://www.fool.com/investing/2025/08/28/why-rigetti-computing-stock-is-skyrocketing-today/?source=iedfolrf0000001",
+    "seen": "20250828T224500Z",
+    "score": 3,
+    "ts": "2025-08-28T22:45:00+00:00Z"
   },
   {
     "type": "SEC_FILING",
-    "ticker": "QUBT",
+    "ticker": "IONQ",
     "form": "8-K",
-    "filed": "2024-04-01",
-    "score": 7
+    "filed": "2025-08-28",
+    "score": 6,
+    "ts": "2025-08-28T00:00:00Z"
   },
   {
     "type": "SEC_FILING",
-    "ticker": "QUBT",
+    "ticker": "IONQ",
     "form": "8-K",
-    "filed": "2024-03-21",
-    "score": 7
+    "filed": "2025-08-28",
+    "score": 6,
+    "ts": "2025-08-28T00:00:00Z"
   },
   {
     "type": "SEC_FILING",
-    "ticker": "QUBT",
-    "form": "8-K",
-    "filed": "2024-03-20",
-    "score": 7
+    "ticker": "IONQ",
+    "form": "4",
+    "filed": "2025-08-28",
+    "score": 4,
+    "ts": "2025-08-28T00:00:00Z"
   },
   {
     "type": "SEC_FILING",
-    "ticker": "QUBT",
-    "form": "8-K",
-    "filed": "2024-03-11",
-    "score": 7
+    "ticker": "IONQ",
+    "form": "4",
+    "filed": "2025-08-28",
+    "score": 4,
+    "ts": "2025-08-28T00:00:00Z"
   },
   {
     "type": "SEC_FILING",
-    "ticker": "QUBT",
-    "form": "8-K",
-    "filed": "2024-03-04",
-    "score": 7
+    "ticker": "IONQ",
+    "form": "3",
+    "filed": "2025-08-28",
+    "score": 4,
+    "ts": "2025-08-28T00:00:00Z"
   },
   {
     "type": "SEC_FILING",
-    "ticker": "QUBT",
-    "form": "8-K",
-    "filed": "2024-02-28",
-    "score": 7
+    "ticker": "IONQ",
+    "form": "3",
+    "filed": "2025-08-28",
+    "score": 4,
+    "ts": "2025-08-28T00:00:00Z"
   },
   {
     "type": "SEC_FILING",
-    "ticker": "QUBT",
-    "form": "8-K",
-    "filed": "2024-02-28",
-    "score": 7
+    "ticker": "IONQ",
+    "form": "424B7",
+    "filed": "2025-08-28",
+    "score": 4,
+    "ts": "2025-08-28T00:00:00Z"
   },
   {
-    "type": "SEC_FILING",
-    "ticker": "QUBT",
-    "form": "10-K",
-    "filed": "2024-02-27",
-    "score": 7
+    "type": "NEWS",
+    "title": "A $10 Billion Reason to Buy This Quantum Computing Stock Now",
+    "url": "https://finance.yahoo.com/news/10-billion-reason-buy-quantum-194219466.html",
+    "seen": "20250827T071500Z",
+    "score": 3,
+    "ts": "2025-08-27T07:15:00+00:00Z"
   },
   {
-    "type": "SEC_FILING",
-    "ticker": "QUBT",
-    "form": "8-K",
-    "filed": "2024-02-27",
-    "score": 7
+    "type": "ARXIV",
+    "title": "Vectorized Attention with Learnable Encoding for Quantum Transformer",
+    "published": "2025-08-25T20:33:14Z",
+    "link": "http://arxiv.org/abs/2508.18464v2",
+    "score": 5,
+    "ts": "2025-08-25T20:33:14+00:00Z"
   },
   {
-    "type": "SEC_FILING",
-    "ticker": "QUBT",
-    "form": "8-K",
-    "filed": "2024-02-27",
-    "score": 7
+    "type": "NEWS",
+    "title": "Jim Cramer Was Right When He Warned Against Quantum Computing Inc . ( QUBT ) ",
+    "url": "https://www.insidermonkey.com/blog/jim-cramer-was-right-when-he-warned-against-quantum-computing-inc-qubt-1596879/",
+    "seen": "20250825T183000Z",
+    "score": 3,
+    "ts": "2025-08-25T18:30:00+00:00Z"
   },
   {
-    "type": "SEC_FILING",
-    "ticker": "QUBT",
-    "form": "8-K",
-    "filed": "2024-02-08",
-    "score": 7
+    "type": "NEWS",
+    "title": "Alphabet Inc . ( GOOGL ): Jim Cramer Changes His Mind About Quantum Computing Potential",
+    "url": "https://www.insidermonkey.com/blog/alphabet-inc-googl-jim-cramer-changes-his-mind-about-quantum-computing-potential-1596880/",
+    "seen": "20250825T183000Z",
+    "score": 3,
+    "ts": "2025-08-25T18:30:00+00:00Z"
   },
   {
-    "type": "SEC_FILING",
-    "ticker": "QUBT",
-    "form": "8-K",
-    "filed": "2024-01-02",
-    "score": 7
+    "type": "NEWS",
+    "title": "Jim Cramer Was Right When He Warned Against Quantum Computing Inc . ( QUBT ) ",
+    "url": "https://www.insidermonkey.com/blog/jim-cramer-was-right-when-he-warned-against-quantum-computing-inc-qubt-1596879/",
+    "seen": "20250825T183000Z",
+    "score": 3,
+    "ts": "2025-08-25T18:30:00+00:00Z"
   },
   {
-    "type": "SEC_FILING",
-    "ticker": "QUBT",
-    "form": "8-K",
-    "filed": "2023-12-29",
-    "score": 7
+    "type": "NEWS",
+    "title": "Alphabet Inc . ( GOOGL ): Jim Cramer Changes His Mind About Quantum Computing Potential",
+    "url": "https://www.insidermonkey.com/blog/alphabet-inc-googl-jim-cramer-changes-his-mind-about-quantum-computing-potential-1596880/",
+    "seen": "20250825T183000Z",
+    "score": 3,
+    "ts": "2025-08-25T18:30:00+00:00Z"
   },
   {
-    "type": "SEC_FILING",
-    "ticker": "QUBT",
-    "form": "8-K",
-    "filed": "2023-12-22",
-    "score": 7
+    "type": "NEWS",
+    "title": "Jim Cramer Was Right When He Warned Against Quantum Computing Inc . ( QUBT ) ",
+    "url": "https://finance.yahoo.com/news/jim-cramer-warned-against-quantum-172413399.html",
+    "seen": "20250825T181500Z",
+    "score": 3,
+    "ts": "2025-08-25T18:15:00+00:00Z"
   },
   {
-    "type": "SEC_FILING",
-    "ticker": "QUBT",
-    "form": "8-K",
-    "filed": "2023-12-21",
-    "score": 7
+    "type": "NEWS",
+    "title": "Alphabet Inc . ( GOOGL ): Jim Cramer Changes His Mind About Quantum Computing Potential",
+    "url": "https://finance.yahoo.com/news/alphabet-inc-googl-jim-cramer-172355916.html",
+    "seen": "20250825T181500Z",
+    "score": 3,
+    "ts": "2025-08-25T18:15:00+00:00Z"
   },
   {
-    "type": "SEC_FILING",
-    "ticker": "QUBT",
-    "form": "8-K",
-    "filed": "2023-12-04",
-    "score": 7
+    "type": "NEWS",
+    "title": "Jim Cramer Was Right When He Warned Against Quantum Computing Inc . ( QUBT ) ",
+    "url": "https://finance.yahoo.com/news/jim-cramer-warned-against-quantum-172413399.html",
+    "seen": "20250825T181500Z",
+    "score": 3,
+    "ts": "2025-08-25T18:15:00+00:00Z"
   },
   {
-    "type": "SEC_FILING",
-    "ticker": "QUBT",
-    "form": "8-K",
-    "filed": "2023-12-04",
-    "score": 7
+    "type": "NEWS",
+    "title": "Alphabet Inc . ( GOOGL ): Jim Cramer Changes His Mind About Quantum Computing Potential",
+    "url": "https://finance.yahoo.com/news/alphabet-inc-googl-jim-cramer-172355916.html",
+    "seen": "20250825T181500Z",
+    "score": 3,
+    "ts": "2025-08-25T18:15:00+00:00Z"
   },
   {
-    "type": "SEC_FILING",
-    "ticker": "QUBT",
-    "form": "8-K",
-    "filed": "2023-11-13",
-    "score": 7
+    "type": "NEWS",
+    "title": "云南坝美 ： 打造特色  世外桃源  乡村游|文山|广南县|自治州|坝美村|云南省",
+    "url": "https://www.163.com/dy/article/K7RDURR905346RC6.html",
+    "seen": "20250825T150000Z",
+    "score": 3,
+    "ts": "2025-08-25T15:00:00+00:00Z"
   },
   {
-    "type": "SEC_FILING",
-    "ticker": "QUBT",
-    "form": "8-K",
-    "filed": "2023-11-08",
-    "score": 7
+    "type": "NEWS",
+    "title": "Jim Cramer 13 Quantum Computing & Nuclear Stock Predictions – See How They Played Out ! ",
+    "url": "https://www.insidermonkey.com/blog/jim-cramers-14-quantum-computing-nuclear-stock-predictions-see-how-they-played-out-1594398/",
+    "seen": "20250824T154500Z",
+    "score": 3,
+    "ts": "2025-08-24T15:45:00+00:00Z"
   },
   {
-    "type": "SEC_FILING",
-    "ticker": "QUBT",
-    "form": "10-Q",
-    "filed": "2023-11-07",
-    "score": 7
+    "type": "NEWS",
+    "title": "Jim Cramer 13 Quantum Computing & Nuclear Stock Predictions – See How They Played Out ! ",
+    "url": "https://www.insidermonkey.com/blog/jim-cramers-14-quantum-computing-nuclear-stock-predictions-see-how-they-played-out-1594398/",
+    "seen": "20250824T154500Z",
+    "score": 3,
+    "ts": "2025-08-24T15:45:00+00:00Z"
   },
   {
-    "type": "SEC_FILING",
-    "ticker": "QUBT",
-    "form": "8-K",
-    "filed": "2023-11-07",
-    "score": 7
+    "type": "NEWS",
+    "title": "Three Things for the Week Ahead in Beijing ( Aug 25 - 31 ) ",
+    "url": "https://www.thebeijinger.com/blog/2025/08/21/three-things-week-ahead-beijing-aug-25-31",
+    "seen": "20250824T074500Z",
+    "score": 3,
+    "ts": "2025-08-24T07:45:00+00:00Z"
   },
   {
-    "type": "SEC_FILING",
-    "ticker": "QUBT",
-    "form": "8-K",
-    "filed": "2023-11-07",
-    "score": 7
+    "type": "NEWS",
+    "title": "What Going On With Rigetti Computing Stock Wednesday ? - Rigetti Computing ( NASDAQ : RGTI ) ",
+    "url": "https://www.benzinga.com/markets/tech/25/08/47240606/rigetti-computing-montana-state-university-team-up-to-advance-quantum-research",
+    "seen": "20250820T170000Z",
+    "score": 3,
+    "ts": "2025-08-20T17:00:00+00:00Z"
   },
   {
-    "type": "SEC_FILING",
-    "ticker": "QUBT",
-    "form": "8-K",
-    "filed": "2023-10-20",
-    "score": 7
+    "type": "NEWS",
+    "title": "Smart Money Is Betting Big In IONQ Options - IonQ ( NYSE : IONQ ) ",
+    "url": "https://www.benzinga.com/insights/options/25/08/47239781/smart-money-is-betting-big-in-ionq-options",
+    "seen": "20250820T170000Z",
+    "score": 3,
+    "ts": "2025-08-20T17:00:00+00:00Z"
   },
   {
-    "type": "SEC_FILING",
-    "ticker": "QUBT",
-    "form": "8-K",
-    "filed": "2023-10-12",
-    "score": 7
+    "type": "NEWS",
+    "title": "What Going On With Rigetti Computing Stock Wednesday ? - Rigetti Computing ( NASDAQ : RGTI ) ",
+    "url": "https://www.benzinga.com/markets/tech/25/08/47240606/rigetti-computing-montana-state-university-team-up-to-advance-quantum-research",
+    "seen": "20250820T170000Z",
+    "score": 3,
+    "ts": "2025-08-20T17:00:00+00:00Z"
   },
   {
-    "type": "SEC_FILING",
-    "ticker": "QUBT",
-    "form": "8-K",
-    "filed": "2023-10-02",
-    "score": 7
+    "type": "NEWS",
+    "title": "Smart Money Is Betting Big In IONQ Options - IonQ ( NYSE : IONQ ) ",
+    "url": "https://www.benzinga.com/insights/options/25/08/47239781/smart-money-is-betting-big-in-ionq-options",
+    "seen": "20250820T170000Z",
+    "score": 3,
+    "ts": "2025-08-20T17:00:00+00:00Z"
   },
   {
-    "type": "SEC_FILING",
-    "ticker": "QUBT",
-    "form": "8-K",
-    "filed": "2023-09-25",
-    "score": 7
+    "type": "NEWS",
+    "title": "IonQ Expands Quantum IP Portfolio , Surpassing 1 , 000 Patents And Applications",
+    "url": "https://finance.yahoo.com/news/ionq-expands-quantum-ip-portfolio-161503163.html",
+    "seen": "20250820T164500Z",
+    "score": 4,
+    "ts": "2025-08-20T16:45:00+00:00Z"
   },
   {
-    "type": "SEC_FILING",
-    "ticker": "QUBT",
-    "form": "8-K",
-    "filed": "2023-09-18",
-    "score": 7
+    "type": "NEWS",
+    "title": "IonQ Expands Quantum IP Portfolio , Surpassing 1 , 000 Patents And Applications",
+    "url": "https://finance.yahoo.com/news/ionq-expands-quantum-ip-portfolio-161503163.html",
+    "seen": "20250820T164500Z",
+    "score": 4,
+    "ts": "2025-08-20T16:45:00+00:00Z"
   },
   {
-    "type": "SEC_FILING",
-    "ticker": "QUBT",
-    "form": "8-K",
-    "filed": "2023-09-15",
-    "score": 7
+    "type": "NEWS",
+    "title": "Should You Buy the Post - Earnings Dip in Rigetti Computing Stock ? ",
+    "url": "https://finance.yahoo.com/news/buy-post-earnings-dip-rigetti-143124800.html",
+    "seen": "20250819T224500Z",
+    "score": 3,
+    "ts": "2025-08-19T22:45:00+00:00Z"
   },
   {
-    "type": "SEC_FILING",
-    "ticker": "QUBT",
-    "form": "8-K",
-    "filed": "2023-09-12",
-    "score": 7
+    "type": "NEWS",
+    "title": "Should You Buy the Post - Earnings Dip in Rigetti Computing Stock ? ",
+    "url": "https://finance.yahoo.com/news/buy-post-earnings-dip-rigetti-143124800.html",
+    "seen": "20250819T224500Z",
+    "score": 3,
+    "ts": "2025-08-19T22:45:00+00:00Z"
   },
   {
-    "type": "SEC_FILING",
-    "ticker": "QUBT",
-    "form": "8-K",
-    "filed": "2023-09-08",
-    "score": 7
+    "type": "ARXIV",
+    "title": "Guided sampling ansätzes for variational quantum computing",
+    "published": "2025-08-19T15:21:23Z",
+    "link": "http://arxiv.org/abs/2508.13926v1",
+    "score": 5,
+    "ts": "2025-08-19T15:21:23+00:00Z"
   },
   {
-    "type": "SEC_FILING",
-    "ticker": "QUBT",
-    "form": "8-K",
-    "filed": "2023-09-07",
-    "score": 7
+    "type": "NEWS",
+    "title": "1 Brilliant Quantum Computing Stock to Buy Before It Soars 70 %, According to 1 Wall Street Analyst",
+    "url": "https://www.fool.com/investing/2025/08/16/1-brilliant-quantum-computing-stock-to-buy-before/",
+    "seen": "20250817T061500Z",
+    "score": 3,
+    "ts": "2025-08-17T06:15:00+00:00Z"
   },
   {
-    "type": "SEC_FILING",
-    "ticker": "QUBT",
-    "form": "8-K",
-    "filed": "2023-08-09",
-    "score": 7
+    "type": "NEWS",
+    "title": "1 Brilliant Quantum Computing Stock to Buy Before It Soars 70 %, According to 1 Wall Street Analyst",
+    "url": "https://www.fool.com/investing/2025/08/16/1-brilliant-quantum-computing-stock-to-buy-before/",
+    "seen": "20250817T061500Z",
+    "score": 3,
+    "ts": "2025-08-17T06:15:00+00:00Z"
   },
   {
-    "type": "SEC_FILING",
-    "ticker": "QUBT",
-    "form": "10-Q",
-    "filed": "2023-08-03",
-    "score": 7
+    "type": "NEWS",
+    "title": "5 Brilliant Quantum Computing Stocks to Buy Right Now",
+    "url": "https://www.fool.com/investing/2025/08/16/5-brilliant-quantum-computing-stocks-to-buy-right/?source=iedfolrf0000001",
+    "seen": "20250816T094500Z",
+    "score": 3,
+    "ts": "2025-08-16T09:45:00+00:00Z"
   },
   {
-    "type": "SEC_FILING",
-    "ticker": "QUBT",
-    "form": "8-K",
-    "filed": "2023-08-03",
-    "score": 7
+    "type": "NEWS",
+    "title": "Microsoft CEO Satya Nadella Just Delivered Great News for Quantum Computing Investors",
+    "url": "https://finance.yahoo.com/news/microsoft-ceo-satya-nadella-just-084500504.html",
+    "seen": "20250815T191500Z",
+    "score": 3,
+    "ts": "2025-08-15T19:15:00+00:00Z"
   },
   {
-    "type": "SEC_FILING",
-    "ticker": "QUBT",
-    "form": "8-K",
-    "filed": "2023-08-03",
-    "score": 7
+    "type": "NEWS",
+    "title": "Microsoft CEO Satya Nadella Just Delivered Great News for Quantum Computing Investors",
+    "url": "https://finance.yahoo.com/news/microsoft-ceo-satya-nadella-just-084500504.html",
+    "seen": "20250815T191500Z",
+    "score": 3,
+    "ts": "2025-08-15T19:15:00+00:00Z"
   },
   {
-    "type": "SEC_FILING",
-    "ticker": "QUBT",
-    "form": "8-K",
-    "filed": "2023-08-03",
-    "score": 7
+    "type": "NEWS",
+    "title": "Best Quantum Computing Stock : D - Wave Quantum or IonQ",
+    "url": "https://www.fool.com/investing/2025/08/15/best-quantum-computing-stock-dwave-quantum-or-ionq/?source=iedfolrf0000001",
+    "seen": "20250815T120000Z",
+    "score": 3,
+    "ts": "2025-08-15T12:00:00+00:00Z"
   }
 ]
