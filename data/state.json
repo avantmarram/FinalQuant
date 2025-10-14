@@ -1,12 +1,14 @@
 {
   "notified_ids": [
-    "{\"change_pct\": 23.73, \"score\": 8, \"ticker\": \"RGTI\", \"type\": \"PRICE_SPIKE\"}",
     "{\"change_pct\": 21.62, \"score\": 8, \"ticker\": \"QBTS\", \"ts\": \"2025-10-14T05:51:50.077817+00:00Z\", \"type\": \"PRICE_SPIKE\"}",
-    "{\"change_pct\": 21.62, \"score\": 8, \"ticker\": \"QBTS\", \"ts\": \"2025-10-14T05:55:40.329168+00:00Z\", \"type\": \"PRICE_SPIKE\"}",
-    "{\"change_pct\": 21.62, \"score\": 8, \"ticker\": \"QBTS\", \"type\": \"PRICE_SPIKE\"}",
-    "{\"change_pct\": 23.73, \"score\": 8, \"ticker\": \"RGTI\", \"ts\": \"2025-10-14T05:51:49.779047+00:00Z\", \"type\": \"PRICE_SPIKE\"}",
-    "{\"change_pct\": 23.73, \"score\": 8, \"ticker\": \"RGTI\", \"ts\": \"2025-10-14T05:55:39.969984+00:00Z\", \"type\": \"PRICE_SPIKE\"}",
     "{\"link\": \"http://arxiv.org/abs/2510.11717v1\", \"published\": \"2025-10-13T17:59:55Z\", \"score\": 3, \"title\": \"Ev4DGS: Novel-view Rendering of Non-Rigid Objects from Monocular Event\\n  Streams\", \"ts\": \"2025-10-13T17:59:55+00:00Z\", \"type\": \"ARXIV\"}",
-    "{\"filed\": \"2022-12-19\", \"form\": \"8-K\", \"score\": 7, \"ticker\": \"RGTI\", \"type\": \"SEC_FILING\"}"
-  ]
+    "{\"link\": \"http://arxiv.org/abs/2510.11718v1\", \"published\": \"2025-10-13T17:59:55Z\", \"score\": 3, \"title\": \"CodePlot-CoT: Mathematical Visual Reasoning by Thinking with Code-Driven\\n  Images\", \"ts\": \"2025-10-13T17:59:55+00:00Z\", \"type\": \"ARXIV\"}",
+    "{\"change_pct\": 23.73, \"score\": 8, \"ticker\": \"RGTI\", \"ts\": \"2025-10-14T05:55:39.969984+00:00Z\", \"type\": \"PRICE_SPIKE\"}",
+    "{\"filed\": \"2022-12-19\", \"form\": \"8-K\", \"score\": 7, \"ticker\": \"RGTI\", \"type\": \"SEC_FILING\"}",
+    "{\"change_pct\": 23.73, \"score\": 8, \"ticker\": \"RGTI\", \"ts\": \"2025-10-14T05:51:49.779047+00:00Z\", \"type\": \"PRICE_SPIKE\"}",
+    "{\"change_pct\": 23.73, \"score\": 8, \"ticker\": \"RGTI\", \"type\": \"PRICE_SPIKE\"}",
+    "{\"change_pct\": 21.62, \"score\": 8, \"ticker\": \"QBTS\", \"type\": \"PRICE_SPIKE\"}",
+    "{\"change_pct\": 21.62, \"score\": 8, \"ticker\": \"QBTS\", \"ts\": \"2025-10-14T05:55:40.329168+00:00Z\", \"type\": \"PRICE_SPIKE\"}"
+  ],
+  "trend_status": {}
 }

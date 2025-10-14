@@ -1,19 +1,5 @@
 [
   {
-    "type": "PRICE_SPIKE",
-    "ticker": "QBTS",
-    "change_pct": 21.62,
-    "score": 8,
-    "ts": "2025-10-14T05:55:40.329168+00:00Z"
-  },
-  {
-    "type": "PRICE_SPIKE",
-    "ticker": "RGTI",
-    "change_pct": 23.73,
-    "score": 8,
-    "ts": "2025-10-14T05:55:39.969984+00:00Z"
-  },
-  {
     "type": "ARXIV",
     "title": "Ev4DGS: Novel-view Rendering of Non-Rigid Objects from Monocular Event\n  Streams",
     "published": "2025-10-13T17:59:55Z",
@@ -303,6 +289,22 @@
   },
   {
     "type": "ARXIV",
+    "title": "The Magic Barrier before Thermalization",
+    "published": "2025-10-13T17:47:22Z",
+    "link": "http://arxiv.org/abs/2510.11681v1",
+    "score": 5,
+    "ts": "2025-10-13T17:47:22+00:00Z"
+  },
+  {
+    "type": "ARXIV",
+    "title": "Observation of ballistic plasma and memory in high-energy gauge theory\n  dynamics",
+    "published": "2025-10-13T17:46:31Z",
+    "link": "http://arxiv.org/abs/2510.11679v1",
+    "score": 5,
+    "ts": "2025-10-13T17:46:31+00:00Z"
+  },
+  {
+    "type": "ARXIV",
     "title": "Observation of ballistic plasma and memory in high-energy gauge theory\n  dynamics",
     "published": "2025-10-13T17:46:31Z",
     "link": "http://arxiv.org/abs/2510.11679v1",
@@ -335,6 +337,14 @@
   },
   {
     "type": "ARXIV",
+    "title": "Spinon Mediation of Witness-Spin Dynamics and Ground State in\n  Herbertsmithite",
+    "published": "2025-10-13T17:46:03Z",
+    "link": "http://arxiv.org/abs/2510.11678v1",
+    "score": 5,
+    "ts": "2025-10-13T17:46:03+00:00Z"
+  },
+  {
+    "type": "ARXIV",
     "title": "GraviGUT unification with revisited Pati-Salam model",
     "published": "2025-10-13T17:44:38Z",
     "link": "http://arxiv.org/abs/2510.11674v1",
@@ -348,6 +358,22 @@
     "link": "http://arxiv.org/abs/2510.11674v1",
     "score": 5,
     "ts": "2025-10-13T17:44:38+00:00Z"
+  },
+  {
+    "type": "ARXIV",
+    "title": "GraviGUT unification with revisited Pati-Salam model",
+    "published": "2025-10-13T17:44:38Z",
+    "link": "http://arxiv.org/abs/2510.11674v1",
+    "score": 5,
+    "ts": "2025-10-13T17:44:38+00:00Z"
+  },
+  {
+    "type": "ARXIV",
+    "title": "Finite-temperature phase diagram and collective modes of coherently\n  coupled Bose mixtures",
+    "published": "2025-10-13T17:43:24Z",
+    "link": "http://arxiv.org/abs/2510.11671v1",
+    "score": 3,
+    "ts": "2025-10-13T17:43:24+00:00Z"
   },
   {
     "type": "ARXIV",
@@ -1572,29 +1598,5 @@
     "seen": "20250816T094500Z",
     "score": 3,
     "ts": "2025-08-16T09:45:00+00:00Z"
-  },
-  {
-    "type": "NEWS",
-    "title": "Microsoft CEO Satya Nadella Just Delivered Great News for Quantum Computing Investors",
-    "url": "https://finance.yahoo.com/news/microsoft-ceo-satya-nadella-just-084500504.html",
-    "seen": "20250815T191500Z",
-    "score": 3,
-    "ts": "2025-08-15T19:15:00+00:00Z"
-  },
-  {
-    "type": "NEWS",
-    "title": "Microsoft CEO Satya Nadella Just Delivered Great News for Quantum Computing Investors",
-    "url": "https://finance.yahoo.com/news/microsoft-ceo-satya-nadella-just-084500504.html",
-    "seen": "20250815T191500Z",
-    "score": 3,
-    "ts": "2025-08-15T19:15:00+00:00Z"
-  },
-  {
-    "type": "NEWS",
-    "title": "Best Quantum Computing Stock : D - Wave Quantum or IonQ",
-    "url": "https://www.fool.com/investing/2025/08/15/best-quantum-computing-stock-dwave-quantum-or-ionq/?source=iedfolrf0000001",
-    "seen": "20250815T120000Z",
-    "score": 3,
-    "ts": "2025-08-15T12:00:00+00:00Z"
   }
 ]
