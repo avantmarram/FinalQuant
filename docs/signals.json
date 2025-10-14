@@ -1,5 +1,13 @@
 [
   {
+    "type": "SEC_FILING",
+    "ticker": "IONQ",
+    "form": "8-K",
+    "filed": "2025-10-14",
+    "score": 7,
+    "ts": "2025-10-14T00:00:00Z"
+  },
+  {
     "type": "ARXIV",
     "title": "Ev4DGS: Novel-view Rendering of Non-Rigid Objects from Monocular Event\n  Streams",
     "published": "2025-10-13T17:59:55Z",
@@ -1590,13 +1598,5 @@
     "seen": "20250817T061500Z",
     "score": 3,
     "ts": "2025-08-17T06:15:00+00:00Z"
-  },
-  {
-    "type": "NEWS",
-    "title": "5 Brilliant Quantum Computing Stocks to Buy Right Now",
-    "url": "https://www.fool.com/investing/2025/08/16/5-brilliant-quantum-computing-stocks-to-buy-right/?source=iedfolrf0000001",
-    "seen": "20250816T094500Z",
-    "score": 3,
-    "ts": "2025-08-16T09:45:00+00:00Z"
   }
 ]
