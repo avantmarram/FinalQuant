@@ -1,20 +1,59 @@
-<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Quantum Radar</title>
-<style>body{font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;margin:20px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;margin-top:20px}.card{border:1px solid #ddd;border-radius:12px;padding:16px;box-shadow:0 1px 4px rgba(0,0,0,.05)}.muted{color:#666}.score{font-weight:700}.badge{display:inline-block;padding:2px 8px;border-radius:12px;background:#eee;font-size:12px}</style></head>
-<body><h1>Quantum Radar</h1><div class="muted">Gratis V1 • Oppdateres automatisk</div><section id="overview" class="grid"></section><h2>Toppsignaler</h2><div id="signals" class="grid"></div>
-<script>
-async function j(p){const r=await fetch(p);return r.json();}
-function el(t,c,x){const e=document.createElement(t);if(c)e.className=c;if(x)e.textContent=x;return e;}
-(async ()=>{
-  const data=await j('data.json'); const sigs=await j('signals.json');
-  const ov=document.getElementById('overview');
-  const a=el('div','card'); a.appendChild(el('div','muted','Sist oppdatert: '+data.generated_at));
-  a.appendChild(el('div','', 'Tickers: '+data.tickers.join(', ')));
-  a.appendChild(el('div','', `Antall → arXiv: ${data.counts.arxiv}, SEC: ${data.counts.sec}, Patenter: ${data.counts.patents}, Nyheter: ${data.counts.news}, Signaler: ${data.counts.signals}`));
-  const p=el('div','card'); p.appendChild(el('div','','Priser (EOD):'));
-  (data.prices||[]).forEach(r=>p.appendChild(el('div','', `${r.ticker}: ${r.price} (${r.change_pct}%)`)));
-  ov.appendChild(a); ov.appendChild(p);
-  const s=document.getElementById('signals');
-  (sigs||[]).slice(0,20).forEach(x=>{const c=el('div','card'); c.appendChild(el('div','badge',x.type)); c.appendChild(el('div','score','Score: '+x.score));
-    Object.entries(x).forEach(([k,v])=>{if(k==='type'||k==='score')return; c.appendChild(el('div','', k+': '+v));}); s.appendChild(c);});
-})();
-</script></body></html>
+<!doctype html>
+<html lang="no">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Quantum Radar</title>
+  <style>
+    :root{
+      --bg:#fff;--text:#111;--muted:#666;--card:#fff;--border:#e5e7eb;
+      --badge:#eef2ff;--badge-strong:#fff3c4;--shadow:0 1px 6px rgba(0,0,0,.06)
+    }
+    *{box-sizing:border-box}
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Inter,sans-serif;margin:20px;color:var(--text);background:var(--bg)}
+    h1{margin:0 0 8px 0}
+    h2{margin:28px 0 10px 0}
+    .muted{color:var(--muted)}
+    .row{display:flex;gap:12px;flex-wrap:wrap;margin-top:12px}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px;margin-top:10px}
+    .card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:14px;box-shadow:var(--shadow)}
+    .badge{display:inline-block;padding:2px 8px;border-radius:12px;background:var(--badge);font-size:12px;margin-bottom:6px}
+    .badge.strong{background:var(--badge-strong)}
+    .score{font-weight:700;margin-bottom:6px}
+    .pill{border:1px solid var(--border);border-radius:999px;padding:6px 10px}
+    .controls{display:flex;gap:10px;flex-wrap:wrap}
+    input[type="search"]{padding:8px 10px;border:1px solid var(--border);border-radius:10px;min-width:220px}
+    select{padding:8px 10px;border:1px solid var(--border);border-radius:10px}
+    a{color:inherit}
+    .kvs{display:grid;grid-template-columns:120px 1fr;gap:4px}
+    .kvs div:nth-child(odd){color:var(--muted)}
+    footer{margin-top:28px;color:var(--muted)}
+  </style>
+</head>
+<body>
+  <h1>Quantum Radar</h1>
+  <div class="muted">Autonom overvåkning av kvanteaksjer • Oppdateres automatisk av GitHub Actions</div>
+
+  <!-- OVERSIKT -->
+  <section id="overview" class="row"></section>
+
+  <!-- KONTROLLER -->
+  <div class="controls" style="margin-top:12px">
+    <input id="q" type="search" placeholder="Søk (ticker, tittel, type, form)…" />
+    <select id="type">
+      <option value="">Alle typer</option>
+      <option>PRICE_SPIKE</option>
+      <option>PRICE_DIP</option>
+      <option>SEC_FILING</option>
+      <option>PATENT</option>
+      <option>NEWS</option>
+      <option>ARXIV</option>
+    </select>
+    <select id="minScore">
+      <option value="0">Min score: 0</option>
+      <option value="5">Min score: 5</option>
+      <option value="6">Min score: 6</option>
+      <option value="7" selected>Min score: 7</option>
+      <option value="8">Min score: 8</option>
+    </select>
+  </div>
