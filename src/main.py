@@ -1,12 +1,27 @@
-import os, json, time
+# src/main.py
+import os, json, time, traceback
 from datetime import datetime, timezone
 
+# Kilder
 from src.sources.prices import fetch_prices
-from src.sources.news import fetch_news  # eksisterer fra før
-from src.sources.sec import fetch_filings  # eksisterer fra før
-from src.sources.patents import fetch_patents  # eksisterer fra før
-from src.sources.arxiv import fetch_arxiv  # eksisterer fra før
-from src.logic.rules import score_items  # eksisterer fra før
+try:
+    from src.sources.news import fetch_news
+except Exception:
+    fetch_news = None
+try:
+    from src.sources.sec import fetch_filings
+except Exception:
+    fetch_filings = None
+try:
+    from src.sources.patents import fetch_patents
+except Exception:
+    fetch_patents = None
+try:
+    from src.sources.arxiv import fetch_arxiv
+except Exception:
+    fetch_arxiv = None
+
+from src.logic.rules import score_items
 from src.notifier import send_discord
 
 from src.config import (
@@ -15,67 +30,54 @@ from src.config import (
     DATA_JSON, SIGNALS_JSON, STATE_JSON
 )
 
-# ---------- enkle signal-/trendberegninger på pris-historikk ----------
-
-def ema(values, span):
+# ---------- helpers ----------
+def ema(vals, span):
+    if not vals: return None
     k = 2 / (span + 1)
-    ema_val = None
+    e = None
     out = []
-    for v in values:
-        if ema_val is None:
-            ema_val = v
-        else:
-            ema_val = v * k + ema_val * (1 - k)
-        out.append(ema_val)
+    for v in vals:
+        e = v if e is None else (v * k + e * (1 - k))
+        out.append(e)
     return out
 
-def rsi(values, period=14):
-    if len(values) <= period:
-        return None
+def rsi(vals, period=14):
+    if len(vals) <= period: return None
     gains, losses = [], []
-    for i in range(1, len(values)):
-        chg = values[i] - values[i-1]
-        gains.append(max(chg, 0))
-        losses.append(max(-chg, 0))
-    avg_gain = sum(gains[:period]) / period
-    avg_loss = sum(losses[:period]) / period
-    rsis = [None]*(period)
-    for i in range(period, len(values)-1):
-        gain = gains[i]
-        loss = losses[i]
-        avg_gain = (avg_gain * (period - 1) + gain) / period
-        avg_loss = (avg_loss * (period - 1) + loss) / period
-        if avg_loss == 0:
-            rs = 999
-        else:
-            rs = avg_gain / avg_loss
-        rsis.append(100 - (100 / (1 + rs)))
+    for i in range(1, len(vals)):
+        d = vals[i] - vals[i-1]
+        gains.append(max(d, 0)); losses.append(max(-d, 0))
+    avg_g = sum(gains[:period]) / period
+    avg_l = sum(losses[:period]) / period
+    rsis = [None]*period
+    for i in range(period, len(vals)-1):
+        avg_g = (avg_g*(period-1) + gains[i]) / period
+        avg_l = (avg_l*(period-1) + losses[i]) / period
+        rs = (avg_g / avg_l) if avg_l else 999
+        rsis.append(100 - (100/(1+rs)))
     rsis.append(rsis[-1])
     return rsis[-1]
 
 def build_trend_blocks(prices_payload):
-    """Lager trenddata per ticker basert på 30 dagers closes."""
     trend = []
     for p in prices_payload:
-        hist = p.get("history", [])
+        hist = p.get("history", []) or []
         closes = [h["close"] for h in hist][-30:]
         if len(closes) < 5:
             trend.append({"ticker": p["ticker"], "status": "WATCH"})
             continue
-        ema5 = ema(closes, 5)[-1]
-        ema20 = ema(closes, 20)[-1] if len(closes) >= 20 else closes[-1]
+        e5  = ema(closes, 5)[-1]
+        e20 = ema(closes, 20)[-1] if len(closes) >= 20 else closes[-1]
         _rsi = rsi(closes, 14) or 50
-        status = "UP" if closes[-1] > ema20 else "DOWN"
+        status = "UP" if closes[-1] > e20 else "DOWN"
         trend.append({
             "ticker": p["ticker"],
-            "ema5": round(ema5, 4),
-            "ema20": round(ema20, 4),
+            "ema5": round(e5, 4),
+            "ema20": round(e20, 4),
             "rsi": round(_rsi, 1),
             "status": status
         })
     return trend
-
-# ---------- IO helpers ----------
 
 def read_json(path, default):
     try:
@@ -91,39 +93,55 @@ def write_json(path, payload):
         json.dump(payload, f, ensure_ascii=False, indent=2)
     os.replace(tmp, path)
 
+def safe_call(name, fn, *a, **k):
+    try:
+        if fn is None:
+            raise RuntimeError(f"{name} modul ikke tilgjengelig")
+        return fn(*a, **k) or []
+    except Exception as e:
+        print(f"[WARN] {name} feilet: {e}")
+        traceback.print_exc()
+        return []
+
 # ------------------------------- MAIN --------------------------------
 
 def main():
     started = time.time()
 
-    # 1) Hent priser (nå + 30 dagers historikk)
-    prices_payload = fetch_prices(TICKERS)
+    # 1) Priser (nå + 30 dagers historikk)
+    prices_payload = safe_call("prices", fetch_prices, TICKERS)
 
-    # 2) Hent kilder
-    news_items = fetch_news(NEWS_KEYWORDS, COMPANIES)
-    sec_items = fetch_filings(COMPANIES)
-    patent_items = fetch_patents(PATENT_KEYWORDS + COMPANIES)
-    arxiv_items = fetch_arxiv(ARXIV_QUERIES)
+    # 2) Kilder (robust)
+    news_items   = safe_call("news",    fetch_news,    NEWS_KEYWORDS, COMPANIES)
+    sec_items    = safe_call("sec",     fetch_filings, COMPANIES)
+    patent_items = safe_call("patents", fetch_patents, PATENT_KEYWORDS + COMPANIES)
+    arxiv_items  = safe_call("arxiv",   fetch_arxiv,   ARXIV_QUERIES)
 
-    # 3) Score & lag “dagens nye”
-    all_items = (news_items or []) + (sec_items or []) + (patent_items or []) + (arxiv_items or [])
-    scored = score_items(all_items)
+    # 3) Score
+    all_items = news_items + sec_items + patent_items + arxiv_items
+    scored = []
+    try:
+        scored = score_items(all_items) or []
+    except Exception as e:
+        print(f"[WARN] score_items feilet: {e}")
+        traceback.print_exc()
+        scored = []
+
     signals_today = [x for x in scored if x.get("is_new")]
 
-    # 4) Trend-data for frontenden
+    # 4) Trend-data
     trend_blocks = build_trend_blocks(prices_payload)
 
-    # 5) Les/oppdater state
-    state = read_json(STATE_JSON, {"last_run": None, "signals_seen": set()})
-    seen = set(state.get("signals_seen", []))
+    # 5) State + nye varsler
+    state = read_json(STATE_JSON, {"last_run": None, "signals_seen": []})
+    seen = set(state.get("signals_seen") or [])
     new_for_alert = []
     for s in signals_today:
         sig_id = s.get("id") or (s.get("type","") + "|" + s.get("title",""))[:256]
         if sig_id not in seen:
-            new_for_alert.append(s)
-            seen.add(sig_id)
+            new_for_alert.append(s); seen.add(sig_id)
 
-    # 6) Varsling (Discord webhook / DM)
+    # 6) Varsling
     if new_for_alert:
         lines = [f"**{len(new_for_alert)} nye signal(er)**"]
         for s in sorted(new_for_alert, key=lambda x: -x.get("score", 0))[:10]:
@@ -131,27 +149,19 @@ def main():
             lines.append(f"- [{t}] {s.get('type','?')} • score {s.get('score',0)} • {s.get('title','')[:120]}")
         send_discord("\n".join(lines))
 
-    # 7) Skriv “signals.json” (for historikk)
+    # 7) Skriv ut filer
     write_json(SIGNALS_JSON, scored)
-
-    # 8) Skriv “data.json” (front-end)
     data = {
         "generated_at": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
         "tickers": TICKERS,
         "prices": prices_payload,
         "trend": trend_blocks,
-        "counts": {
-            "signals_today": len(new_for_alert),
-            "signals_total": len(scored)
-        }
+        "counts": { "signals_today": len(new_for_alert), "signals_total": len(scored) }
     }
     write_json(DATA_JSON, data)
-
-    # 9) Oppdater state
     write_json(STATE_JSON, {"last_run": datetime.utcnow().isoformat()+"Z", "signals_seen": list(seen)})
 
-    elapsed = round(time.time() - started, 1)
-    print(f"Radar ferdig på {elapsed}s • {len(new_for_alert)} nye signaler")
+    print(f"Radar ferdig • {round(time.time()-started,1)}s • {len(new_for_alert)} nye signaler")
 
 if __name__ == "__main__":
     main()
