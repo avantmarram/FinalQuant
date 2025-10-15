@@ -1,86 +1,23 @@
-<!-- docs/index.html -->
 <!doctype html>
 <html lang="no">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Quantum Radar</title>
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1"></script>
   <style>
-    :root {
-      --bg: #0b0e13;
-      --card: #121723;
-      --muted: #9aa4b2;
-      --text: #e6edf3;
-      --green: #00c566;
-      --yellow: #ffcc00;
-      --red: #ff4d4f;
-      --border: #202635;
-      --chip: #1a2130;
-      --accent: #3b82f6;
-    }
-    * { box-sizing: border-box }
-    body {
-      margin: 0; background: var(--bg); color: var(--text);
-      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
-    }
-    .wrap { max-width: 1200px; margin: 0 auto; padding: 24px; }
-    header { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
-    h1 { margin: 0; font-size: 28px; }
-    .muted { color: var(--muted); }
-    .grid {
-      margin-top: 18px;
-      display: grid;
-      grid-template-columns: repeat(12, 1fr);
-      gap: 16px;
-    }
-    .card {
-      grid-column: span 12;
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: 14px;
-      padding: 16px;
-    }
-    @media (min-width: 900px) {
-      .card { grid-column: span 6; }
-    }
-    .row { display: grid; grid-template-columns: 1.4fr 1.4fr 1fr; gap: 16px; }
-    .box {
-      background: var(--chip);
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      padding: 12px;
-      height: 220px;
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-    }
-    .title { font-weight: 700; }
-    .price { font-size: 26px; font-weight: 700; }
-    .chip {
-      display: inline-flex; align-items: center; gap: 8px;
-      background: #0f1522; padding: 6px 10px; border: 1px solid var(--border);
-      border-radius: 999px; color: var(--muted); font-size: 13px;
-    }
-    .light { width: 12px; height: 12px; border-radius: 999px; display: inline-block; }
-    .light.green { background: var(--green); box-shadow: 0 0 12px rgba(0,197,102,.5); }
-    .light.yellow{ background: var(--yellow); box-shadow: 0 0 12px rgba(255,204,0,.5); }
-    .light.red   { background: var(--red); box-shadow: 0 0 12px rgba(255,77,79,.5); }
-    .sub { color: var(--muted); font-size: 13px; }
-    .gauge {
-      height: 10px; background: #0d1422; border: 1px solid var(--border); border-radius: 999px; overflow: hidden;
-    }
-    .gauge > div {
-      height: 100%; background: linear-gradient(90deg, var(--red), var(--yellow), var(--green));
-      width: 50%;
-    }
-    .pair { display: flex; align-items: center; justify-content: space-between; }
-    .pill { background: #0d1524; color: var(--muted); border: 1px solid var(--border); border-radius: 999px; padding: 4px 8px; font-size: 12px; }
-    .section { margin-top: 24px; }
-    a { color: var(--accent); text-decoration: none; }
-    canvas { width: 100% !important; height: 140px !important; }
+    :root{--bg:#0b0e13;--card:#121723;--muted:#9aa4b2;--text:#e6edf3;--green:#00c566;--yellow:#ffcc00;--red:#ff4d4f;--border:#202635;--chip:#1a2130;--accent:#3b82f6}
+    *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Arial,"Noto Sans",sans-serif}
+    .wrap{max-width:1200px;margin:0 auto;padding:24px}header{display:flex;align-items:baseline;justify-content:space-between;gap:12px;flex-wrap:wrap}h1{margin:0;font-size:28px}.muted{color:var(--muted)}
+    .grid{margin-top:18px;display:grid;grid-template-columns:repeat(12,1fr);gap:16px}.card{grid-column:span 12;background:var(--card);border:1px solid var(--border);border-radius:14px;padding:16px}
+    @media (min-width:900px){.card{grid-column:span 6}}
+    .row{display:grid;grid-template-columns:1.4fr 1.4fr 1fr;gap:16px}.box{background:var(--chip);border:1px solid var(--border);border-radius:12px;padding:12px;height:220px;display:flex;flex-direction:column;gap:10px}
+    .title{font-weight:700}.price{font-size:26px;font-weight:700}.chip{display:inline-flex;align-items:center;gap:8px;background:#0f1522;padding:6px 10px;border:1px solid var(--border);border-radius:999px;color:var(--muted);font-size:13px}
+    .light{width:12px;height:12px;border-radius:999px;display:inline-block}.green{background:var(--green);box-shadow:0 0 12px rgba(0,197,102,.5)}.yellow{background:var(--yellow);box-shadow:0 0 12px rgba(255,204,0,.5)}.red{background:var(--red);box-shadow:0 0 12px rgba(255,77,79,.5)}
+    .sub{color:var(--muted);font-size:13px}.gauge{height:10px;background:#0d1422;border:1px solid var(--border);border-radius:999px;overflow:hidden}.gauge>div{height:100%;background:linear-gradient(90deg,var(--red),var(--yellow),var(--green));width:50%}
+    .pair{display:flex;align-items:center;justify-content:space-between}.pill{background:#0d1524;color:var(--muted);border:1px solid var(--border);border-radius:999px;padding:4px 8px;font-size:12px}.section{margin-top:24px}a{color:var(--accent);text-decoration:none}
+    canvas{width:100%!important;height:140px!important}
   </style>
 </head>
 <body>
@@ -90,9 +27,7 @@
       <div class="muted" id="meta"></div>
     </header>
 
-    <div class="section">
-      <div class="grid" id="cards"></div>
-    </div>
+    <div class="grid" id="cards"></div>
 
     <div class="section">
       <h3>Varsler</h3>
@@ -101,165 +36,75 @@
   </div>
 
   <script>
-    const BUY_ZONES = {
-      RGTI: [52.00, 50.00, 49.20, 47.80],
-      QBTS: [38.00, 36.00, 34.50],
-      IONQ: [],
-      QUBT: [],
-    };
-    const NEAR_BAND = 0.005; // 0.5%
-
-    // Kjøp/Hold/Selg-logikk (enkel, men effektiv)
-    function decideSignal(tkr, price, changePct, trend) {
-      if (!price || !trend) return {label: "HOLD", color: "yellow", reason: "mangler data"};
-      const rsi = trend.rsi ?? 50;
-      const ema20 = trend.ema20 ?? price;
-      const status = trend.status || "WATCH";
-      const dist20 = (price - ema20) / ema20;
-
-      // Nær definert kjøpssone?
-      const levels = BUY_ZONES[tkr] || [];
-      const nearBuy = levels.some(lvl => Math.abs(price - lvl)/lvl <= NEAR_BAND);
-
-      if (status === "DOWN" && rsi < 40 && nearBuy) {
-        return {label:"BUY", color:"green", reason:"DOWN men nær dyp kjøpssone (contrarian)"};
-      }
-      if (status === "UP" && rsi >= 45 && rsi <= 65 && Math.abs(dist20) < 0.06) {
-        return {label:"BUY", color:"green", reason:"UP + RSI 45–65 + nær EMA20"};
-      }
-      if (rsi > 75 || dist20 > 0.15 || (changePct && changePct > 12)) {
-        return {label:"SELL", color:"red", reason:"overkjøpt / langt over EMA / stor spike"};
-      }
-      if (status === "DOWN" && rsi < 45 && dist20 < -0.05) {
-        return {label:"HOLD", color:"yellow", reason:"nedsyklus – vent på bedre entry"};
-      }
-      return {label:"HOLD", color:"yellow", reason:"midt i range / avvent bekreftelse"};
+    const BUY_ZONES={RGTI:[52,50,49.2,47.8],QBTS:[38,36,34.5],IONQ:[],QUBT:[]},NEAR_BAND=.005;
+    function fmtPct(x){if(x===null||x===undefined)return "–";return (x>=0?"+":"")+x.toFixed(2)+"%"}
+    function fmtUSD(x){return x===null||x===undefined?"–":x.toFixed(2)}
+    function decideSignal(t,pct,trend){
+      if(!t||!t.price||!trend)return {label:"HOLD",color:"yellow",reason:"mangler data"};
+      const price=t.price,rsi=trend.rsi??50,ema20=trend.ema20??price,status=trend.status||"WATCH";
+      const dist20=(price-ema20)/ema20, near=(BUY_ZONES[t.ticker]||[]).some(v=>Math.abs(price-v)/v<=NEAR_BAND);
+      if(status==="DOWN"&&rsi<40&&near) return {label:"BUY",color:"green",reason:"DOWN + nær dyp kjøpssone"};
+      if(status==="UP"&&rsi>=45&&rsi<=65&&Math.abs(dist20)<.06) return {label:"BUY",color:"green",reason:"UP + RSI 45–65 + nær EMA20"};
+      if(rsi>75||dist20>0.15||(pct&&pct>12)) return {label:"SELL",color:"red",reason:"overkjøpt / over EMA / spike"};
+      if(status==="DOWN"&&rsi<45&&dist20<-0.05) return {label:"HOLD",color:"yellow",reason:"nedsyklus – vent bedre entry"};
+      return {label:"HOLD",color:"yellow",reason:"midt i range"};
     }
-
-    // Fear/Greed 0..1 basert på RSI + avstand til EMA20
-    function fearGreed(price, trend) {
-      if (!trend || !price) return 0.5;
-      const rsi = Math.max(0, Math.min(100, trend.rsi ?? 50));
-      const ema20 = trend.ema20 ?? price;
-      const dist = Math.max(-0.2, Math.min(0.2, (price - ema20) / ema20)); // clamp ±20%
-      const rsiScore = rsi / 100;               // 0..1
-      const distScore = (dist + 0.2) / 0.4;     // map -0.2..0.2 -> 0..1
-      return Math.max(0, Math.min(1, 0.6*rsiScore + 0.4*distScore));
+    function fearGreed(price,trend){
+      if(!trend||!price)return .5;
+      const rsi=Math.max(0,Math.min(100,trend.rsi??50)),d=Math.max(-.2,Math.min(.2,(price-(trend.ema20??price))/(trend.ema20??price)));
+      const rs=rsi/100, ds=(d+.2)/.4; return Math.max(0,Math.min(1,.6*rs+.4*ds));
     }
-
-    async function loadJSON(url) {
-      const r = await fetch(url, {cache: "no-store"});
-      if (!r.ok) throw new Error(await r.text());
-      return r.json();
+    async function loadJSON(u){const r=await fetch(u,{cache:"no-store"}); if(!r.ok) throw new Error(await r.text()); return r.json()}
+    function spark(canvas, hist){
+      const labels=hist.map(h=>h.date), data=hist.map(h=>h.close);
+      new Chart(canvas,{type:"line",data:{labels,datasets:[{data,borderWidth:2,pointRadius:0,tension:.25}]},
+        options:{plugins:{legend:{display:false},tooltip:{mode:"index",intersect:false}},
+        interaction:{mode:"index",intersect:false},
+        scales:{x:{display:false},y:{display:true,ticks:{color:"#6b7280"},grid:{color:"#1f2937"}}}});
     }
-
-    function fmtPct(x) { return (x>=0?"+":"") + (x??0).toFixed(2) + "%"; }
-    function fmtUSD(x) { return (x??0).toFixed(2); }
-
-    function renderCard(root, p, t) {
-      const price = p.price, chg = p.change_pct;
-      const trend = t || {};
-      const sig = decideSignal(p.ticker, price, chg, trend);
-      const fg = fearGreed(price, trend);
-
-      const card = document.createElement("div");
-      card.className = "card";
-      card.innerHTML = `
+    function card(root,p,t){
+      const sig=decideSignal(p,p.change_pct,t), fg=fearGreed(p.price,t);
+      const div=document.createElement("div"); div.className="card";
+      div.innerHTML=`
         <div class="pair" style="margin-bottom:10px">
           <div class="title" style="font-size:18px">${p.ticker}</div>
-          <div class="pill">RSI: ${trend.rsi?.toFixed?.(0) ?? "–"} | Trend: ${trend.status ?? "?"}</div>
+          <div class="pill">RSI: ${t?.rsi?.toFixed?.(0)??"–"} | Trend: ${t?.status??"?"}</div>
         </div>
         <div class="row">
           <div class="box">
             <div class="pair"><div class="sub">Nåværende kurs</div><span class="chip"><span class="light ${sig.color}"></span>${sig.label}</span></div>
-            <div class="price">$ ${fmtUSD(price)}</div>
-            <div class="sub">${fmtPct(chg)} i dag • ${sig.reason}</div>
+            <div class="price">$ ${fmtUSD(p.price)}</div>
+            <div class="sub">${fmtPct(p.change_pct)} i dag • ${sig.reason}</div>
             <div style="margin-top:auto">
-              <div class="pair" style="margin-bottom:6px">
-                <div class="sub">Fear ↔ Greed</div>
-                <div class="sub">${Math.round(fg*100)}</div>
-              </div>
+              <div class="pair" style="margin-bottom:6px"><div class="sub">Fear ↔ Greed</div><div class="sub">${Math.round(fg*100)}</div></div>
               <div class="gauge"><div style="width:${Math.round(fg*100)}%"></div></div>
             </div>
           </div>
-
           <div class="box">
             <div class="sub">Kursgraf (daglige closes)</div>
-            <canvas id="chart_${p.ticker}"></canvas>
+            <canvas id="c_${p.ticker}"></canvas>
           </div>
-
           <div class="box">
             <div class="sub">Kjøpssoner</div>
             <div class="muted" style="line-height:1.7">
-              ${
-                (BUY_ZONES[p.ticker]||[]).length
-                  ? BUY_ZONES[p.ticker].map(v=>`• ${p.ticker} @ $${v.toFixed(2)} ± ${(NEAR_BAND*100).toFixed(1)}%`).join("<br>")
-                  : "Ingen definerte – bruker RSI/EMA-regler."
-              }
+              ${ (BUY_ZONES[p.ticker]||[]).length ? BUY_ZONES[p.ticker].map(v=>`• ${p.ticker} @ $${v.toFixed(2)} ± ${(NEAR_BAND*100).toFixed(1)}%`).join("<br>") : "Ingen definerte – bruker RSI/EMA-regler." }
             </div>
-            <div style="margin-top:auto" class="sub">
-              EMA20: $${trend.ema20?.toFixed?.(2) ?? "–"}<br>
-              EMA5: $${trend.ema5?.toFixed?.(2) ?? "–"}
-            </div>
+            <div style="margin-top:auto" class="sub">EMA20: $${t?.ema20?.toFixed?.(2)??"–"}<br>EMA5: $${t?.ema5?.toFixed?.(2)??"–"}</div>
           </div>
-        </div>
-      `;
-      root.appendChild(card);
-
-      // sparkline chart
-      const ctx = card.querySelector(`#chart_${p.ticker}`);
-      const hist = (p.history || []).slice(-30);
-      const labels = hist.map(h => h.date);
-      const data = hist.map(h => h.close);
-      new Chart(ctx, {
-        type: 'line',
-        data: {
-          labels,
-          datasets: [{
-            data,
-            borderWidth: 2,
-            pointRadius: 0,
-            tension: 0.25
-          }]
-        },
-        options: {
-          plugins: { legend: { display: false }, tooltip: { mode: 'index', intersect: false } },
-          interaction: { mode: 'index', intersect: false },
-          scales: {
-            x: { display: false },
-            y: { display: true, ticks: { color: "#6b7280" }, grid: { color: "#1f2937" } }
-          }
-        }
-      });
+        </div>`;
+      root.appendChild(div);
+      spark(div.querySelector(`#c_${p.ticker}`), (p.history||[]).slice(-30));
     }
-
-    async function main() {
-      const data = await loadJSON("../data/data.json?_=" + Date.now());
-      const meta = document.getElementById("meta");
-      meta.textContent = `Sist oppdatert: ${data.generated_at} • Tickers: ${data.tickers.join(", ")}`;
-
-      const priceMap = Object.fromEntries((data.prices||[]).map(p => [p.ticker, p]));
-      const trendMap = Object.fromEntries((data.trend||[]).map(t => [t.ticker, t]));
-
-      const root = document.getElementById("cards");
-      (data.tickers || []).forEach(tkr => {
-        const p = priceMap[tkr] || {ticker: tkr};
-        const t = trendMap[tkr] || {};
-        renderCard(root, p, t);
-      });
-
-      // En enkel “Varsler”-feed fra dagens nye signaler
-      const alerts = document.getElementById("alerts");
-      const todayCount = data.counts?.signals_today ?? 0;
-      alerts.innerHTML = todayCount
-        ? `Nye signaler i dag: <strong>${todayCount}</strong> • Sjekk Discord for DM-varsler.`
-        : `Ingen nye signaler registrert i dag.`;
+    async function main(){
+      const data=await loadJSON("../data/data.json?_="+Date.now());
+      document.getElementById("meta").textContent=`Sist oppdatert: ${data.generated_at} • Tickers: ${data.tickers.join(", ")}`
+      const pmap=Object.fromEntries((data.prices||[]).map(x=>[x.ticker,x]));
+      const tmap=Object.fromEntries((data.trend||[]).map(x=>[x.ticker,x]));
+      const root=document.getElementById("cards"); (data.tickers||[]).forEach(t=>card(root,pmap[t]||{ticker:t},tmap[t]||{}));
+      const a=document.getElementById("alerts"); const n=data.counts?.signals_today||0;
+      a.innerHTML = n ? `Nye signaler i dag: <strong>${n}</strong> • Sjekk Discord for DM.` : `Ingen nye signaler registrert i dag.`;
     }
-    main().catch(e => {
-      console.error(e);
-      document.getElementById("cards").innerHTML =
-        `<div class="muted">Klarte ikke laste data: ${String(e)}</div>`;
-    });
+    main().catch(e=>{console.error(e);document.getElementById("cards").innerHTML=`<div class="muted">Feil ved lasting: ${String(e)}</div>`})
   </script>
 </body>
 </html>
